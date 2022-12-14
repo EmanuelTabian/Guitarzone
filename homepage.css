@@ -64,7 +64,7 @@ a {text-decoration: none;}
 .mobile-display-none {display: none;}
 /*Songs section CSS design */
 
-section.first-article {background-image:linear-gradient(#B0B0B0,#e4e4e4);}
+header.first-article {background-image:linear-gradient(#B0B0B0,#e4e4e4);}
 .container {
  display: flex;
  justify-content: flex-start;
@@ -79,10 +79,6 @@ section.first-article {background-image:linear-gradient(#B0B0B0,#e4e4e4);}
     text-shadow: 1px 4px 8px rgba(0, 0, 0, 0.3);
 }
 .songs p {margin: 8px 0 8px 0;}
-h1 {
-    font-size: 25px;
-    margin: auto;
-}
 .songs-img {
     width: 50%;
     margin: 32px 8px 32px 32px;
@@ -535,8 +531,8 @@ ul.navbar, .mobile-display-none, .contact-menu {display: flex;}
 
 /*Songs section CSS design */
 
-section.first-article, section.second-article  {width: 100%; }
-section.first-article {border-top-right-radius: 1000px;}
+header.first-article, section.second-article  {width: 100%; }
+header.first-article {border-top-right-radius: 1000px;}
 section.second-article {border-top-left-radius: 1000px;}
 .container {
     display: flex;
