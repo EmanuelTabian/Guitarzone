@@ -172,7 +172,6 @@ h2 {
 }
 .learn-more-button-b a:hover{color: red;transition: linear 0.2s;}
 .learn-more-button-b a:active{color: red;}
-
 /*Tickets section CSS design */
 
 section.third-article {background-image:linear-gradient(#B0B0B0,#e4e4e4);}
