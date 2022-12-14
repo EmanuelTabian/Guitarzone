@@ -1,0 +1,707 @@
+/* This is for mobile. Width smaller than 768px */
+body {
+    max-width: 800px;
+    margin:0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smootthing: grayscale;
+    
+}
+/* Navbar CSS design */
+header {
+    background-image: url("/Homepage-images/Navbar-background.jpg");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: 800px;
+    font-family: 'Lato', sans-serif;
+}
+img.homepage-img {width: 150px;}
+.flex-container-wide {
+   display: flex;
+   justify-content: space-between;
+   flex-direction: row;
+}
+ul.navbar {padding-inline-start: 0;}
+ul li a.active {
+    background-image:linear-gradient(to top, #21182d , #4C3767);
+    border-radius: 8px;
+    border-top-left-radius: 0px ;
+    border-bottom-left-radius: 16px;
+}
+.navbar li a {
+    color: #d0d0d0;
+    line-height: 25px;
+    font-weight: bold;
+    padding: 8px 16px 8px 16px;
+    box-sizing: border-box;
+    text-shadow: 1px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: linear 0.2s;
+}
+.navbar a::after{
+    font-family: "Material Icons";
+    content: "\e5cb";
+    font-size: 16px;
+    position: absolute;
+    left: 75px;
+}
+li {list-style: none;}
+.user-surf a:hover {
+    color: red;
+} 
+.burger-button a:hover {
+    color: red;
+    transition: linear 0.2s;
+}
+.user-surf a:active, .burger-button a:active {color: red;}
+a {text-decoration: none;}
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+    color: #d0d0d0;
+    position: relative;
+    visibility: visible;
+    text-decoration: none;
+    padding: 8px 16px 8px 16px;
+}
+.mobile-display-none {display: none;}
+
+/*Songs section CSS design */
+
+section.first-article {background-image:linear-gradient(#B0B0B0,#e4e4e4);}
+.container {
+ display: flex;
+ justify-content: flex-start;
+ flex-direction: row;
+}
+.songs {
+    width: 50%;
+    margin: 32px 32px 32px 8px;
+    text-align: left;
+    font-family:'Poppins', sans-serif;
+    font-size: 2.4vw;
+    text-shadow: 1px 4px 8px rgba(0, 0, 0, 0.3);
+}
+.songs p {margin: 8px 0 8px 0;}
+h1 {
+    font-size: 25px;
+    margin: auto;
+}
+.songs-img {
+    width: 50%;
+    margin: 32px 8px 32px 32px;
+    border-radius: 16px;
+    border-top-left-radius: 0px ;
+    border-bottom-left-radius: 64px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.learn-more-button-a {
+    margin-right: auto;
+    text-align:center;
+    background-image:linear-gradient(to right, #21182d, #4C3767);
+    padding: 8px 16px 8px 16px;
+    border-radius: 8px;
+    border-top-left-radius: 0px ;
+    border-bottom-left-radius: 16px;
+    text-shadow: 1px 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.learn-more-button-a a{
+    color: #d0d0d0;
+    font-size:2.4vw;
+}
+.learn-more-button-a a::after{
+    font-family: "Material Icons";
+    content: "\e5cb";
+    font-size: 2.5vw;
+    position: relative;
+    top: 2.5px;
+}
+.learn-more-button-a a:hover{color: red;transition: linear 0.2s;}
+.learn-more-button-a a:active{color: red;}
+
+/*Covers section CSS design */
+
+section.second-article {background-image:linear-gradient(#21182d, #4C3767) ;}
+.second-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+}
+.covers-img {
+    width: 50%;
+    margin: 32px 32px 32px 8px;
+    border-radius: 16px;
+    border-top-right-radius: 0px ;
+    border-bottom-right-radius: 64px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.covers {
+    color: #e4e4e4;
+    width: 50%;
+    margin: 32px 8px 32px 32px;
+    text-align: left;
+    font-family:'Poppins', sans-serif;
+    font-size: 2.4vw;
+    text-shadow: 1px 4px 8px rgba(0, 0, 0, 0.3);
+}
+.covers p {margin: 8px 0 8px 0;}
+h2 {
+    font-size: 25px;
+    margin: auto;
+    text-align:left;
+}
+.learn-more-button-b {
+    margin-left:auto;
+    text-align:center;
+    font-weight: bold;
+    background-color: #d0d0d0;
+    padding: 8px 16px 8px 16px;
+    border-radius: 8px;
+    border-top-right-radius: 0px ;
+    border-bottom-right-radius: 16px;
+    text-shadow: 1px 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.learn-more-button-b a{
+    color: #21182d;
+    font-size:2.4vw;
+}
+.learn-more-button-b a::after{
+    font-family: "Material Icons";
+    content: "\e5cb";
+    font-size: 2.5vw;
+    position: relative;
+    top: 2.5px;
+}
+.learn-more-button-b a:hover{color: red;transition: linear 0.2s;}
+.learn-more-button-b a:active{color: red;}
+
+/*Tickets section CSS design */
+
+section.third-article {background-image:linear-gradient(#B0B0B0,#e4e4e4);}
+.third-container {
+    display: flex;
+    justify-content: center;
+ }
+.tickets {
+    width: 75%;
+    margin: 32px 64px 32px 64px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.4vw;
+    text-shadow: 1px 4px 8px rgba(0, 0, 0, 0.3);
+}
+h3 {
+    font-size: 25px;
+    margin: auto;
+}
+.tickets-img {
+    width: 100%;
+    margin: auto;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.get-ticket-button {
+    width: 100%;
+    box-sizing: border-box;
+    margin:auto;
+    text-align:center;
+    background-image:linear-gradient(to right, #21182d, #4C3767);
+    padding: 8px 16px 8px 16px;
+    border-radius: 8px;
+    text-shadow: 1px 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.get-ticket-button a{
+    color: #d0d0d0;
+    font-size:2.4vw;
+}
+.get-ticket-button a::after{
+    font-family: "Material Icons";
+    content: "\e5cb";
+    font-size: 2.5vw;
+    position: relative;
+    top: 2.5px;
+}
+.get-ticket-button a:hover{color: red;transition: linear 0.2s;} 
+.get-ticket-button a:active{color: red;} 
+
+/*Shop section CSS design */
+
+section.fourth-article {background-image:linear-gradient(#21182d, #4C3767) ;}
+.fourth-container {
+    display: flex;
+    justify-content: center;
+}
+.shop {
+    width: 75%;
+    margin: 32px 64px 32px 64px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.4vw;
+    text-shadow: 1px 4px 8px rgba(0, 0, 0, 0.3);
+}
+h4 {
+    font-size: 25px;
+    margin: auto;
+    color: #e4e4e4;
+}
+.shop-img {
+    width: 100%;
+    margin: auto;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.add-cart-button {
+    width: 100%;
+    box-sizing: border-box;
+    margin:auto;
+    text-align:center;
+    background-image:linear-gradient(to right, #B0B0B0,#e4e4e4);
+    padding: 8px 16px 8px 16px;
+    border-radius: 8px;
+    text-shadow: 1px 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.add-cart-button a{
+    color: #21182d;
+    font-size:2.4vw;
+}
+.add-cart-button a::after{
+    font-family: "Material Icons";
+    content: "\e5cb";
+    font-size: 2.5vw;
+    position: relative;
+    top: 2.5px;
+}
+.add-cart-button a:hover{color: red;transition: linear 0.2s;}
+.add-cart-button a:active{color: red;} 
+.see-prod a {color: #e4e4e4;}
+.see-prod a:hover {color: red;transition: linear 0.2s;}
+.see-prod a:active {color: red;}
+.see-prod a::after{
+    font-family: "Material Icons";
+    content: "\e5cb";
+    font-size: 2.5vw;
+    position: relative;
+    top: 2.5px;
+}
+
+/*Footer section CSS design */
+
+footer {
+    width: auto;
+    background-image:url(./Homepage-images/Navbar-background.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 800px;
+    background-attachment: fixed;
+}
+.ft-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+.follow-section {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    text-shadow: 1px 4px 8px rgba(0, 0, 0, 0.3);
+    margin:16px 8px 16px 32px;
+    background-image:linear-gradient(#21182d, #4C3767) ;
+    color: #e4e4e4;
+    border-radius: 32px;
+    border-top-left-radius: 0px ;
+    padding-inline-start: 0;
+    width: 40%;
+}
+h5 {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 16px 32px 0;
+}
+ul.ft-li {
+    padding-inline-start: 0;  
+    text-align: center; 
+    line-height: 32px;
+}
+.ft-li a{
+    text-decoration: none;
+    color: #d0d0d0;
+    font-weight: bold;
+} 
+ul.ft-li a{border-bottom: 1.9px #e4e4e4 solid;}
+.ft-li a:hover {color: red;transition: linear 0.2s;}
+.ft-li a:active {color: red;}
+form.feedback-message {display: none;}
+.feedback-section {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    margin:16px 32px 16px 8px;
+    text-shadow: 1px 4px 8px rgba(0, 0, 0, 0.3);
+    background-image:linear-gradient(#B0B0B0,#e4e4e4);
+    color: #21182d;
+    border-radius: 32px;
+    border-top-right-radius: 0px ;
+    padding-inline-start: 0;
+    width: 60%;
+}
+h6.ft-li a {color: #21182d;}
+h6 {
+    font-size: 25px;
+    margin: 16px 32px 0;
+    border-bottom: 2px #4C3767 solid;
+}
+p.feedb {
+    margin: 16px 16px 16px 16px;
+    line-height: 25px;
+}
+div.social-icons-ft {display: none;}
+
+/*Copyright section CSS design */
+
+div.copyright {
+    width: 100%;
+    background-image:linear-gradient(to right,#21182d, #4C3767);
+    padding: 8px 0 8px 0;
+}
+.cright {
+    margin: 0;
+    text-align:center;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    color: #e4e4e4;
+    text-shadow: 1px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* This is for tablets. Width from 768px to 992px */
+@media (min-width: 800px) { 
+body {max-width: 1000px;}
+
+/* Navbar CSS design */
+
+header {background-size: 1000px;}
+img.homepage-img {width: 175px;}
+.burger-button {display: none;}
+ul.navbar, .contact-menu, .mobile-display-none {display: flex;}
+.flex-container-wide {
+    display: flex;
+    justify-content: space-between;
+}
+ul.contact-menu {
+    padding-inline-start: 0;
+    text-shadow: 1px 4px 8px rgba(0, 0, 0, 0.3);
+}
+.navbar li a, .contact-menu li a {font-size: 1.9vw;}
+.contact-menu li a{
+    color: #d0d0d0;
+    font-weight: bold;
+    padding: 8px;
+    background-image:linear-gradient(to top, #21182d 3%, #4c3767 7%, transparent 20% );
+    border-radius: 8px;
+    border-top-left-radius: 0px ;
+    border-bottom-left-radius: 16px;
+    transition: linear 0.2s;
+}
+.navbar li a {padding: 8px;}
+.navbar a::after {display: none;}
+.contact-menu li a:hover {
+    color: red;
+    background-image: linear-gradient(to top, #21182d , #4C3767, transparent 30%) ; 
+}
+.contact-menu li a:active {color: red;}
+ul li a.active:hover {
+    color:red;
+    background-image:linear-gradient(to top, #21182d , #4C3767);
+}
+.navbar li a {
+    background-image:linear-gradient(to top, #21182d 3%, #4c3767 7%, transparent 20% );
+    border-radius: 8px;
+    border-top-left-radius: 0px ;
+    border-bottom-left-radius: 16px;
+}
+.user-surf a:hover {
+    color: red;
+    background-image: linear-gradient(to top, #21182d , #4C3767, transparent 30%) ;
+} 
+
+/*Songs section CSS design */
+
+.songs {
+    width: 65%;
+    font-size: 2vw;
+}
+.songs-img {
+    width: 35%;
+    border-radius: 32px;
+    border-top-left-radius: 0px ;
+    border-bottom-left-radius: 64px;
+}
+.learn-more-button-a {
+    border-radius: 16px;
+    border-top-left-radius: 0px ;
+    border-bottom-left-radius: 32px;
+}
+h1 {text-align: center;}
+
+/*Covers section CSS design */
+
+.covers-img {
+    width: 35%;
+    border-radius: 32px;
+    border-top-right-radius: 0px ;
+    border-bottom-right-radius: 64px;
+}
+.covers {
+    width: 65%;
+    font-size: 2vw;
+}
+.learn-more-button-b {
+    border-radius: 16px;
+    border-top-right-radius: 0px ;
+    border-bottom-right-radius: 32px;
+}
+h2 {text-align: center;}
+
+/*Tickets section CSS design */
+
+.tickets-img, .get-ticket-button {width: 75%;}
+
+/*Shop section CSS design */
+
+.shop, .shop-img, .add-cart-button {width: 75%;}
+
+/*Footer section CSS design */
+
+footer {background-size: 1000px;}
+}
+
+/* This is for laptops. Width from 992px to 1200px */
+@media (min-width: 1000px) {
+body {max-width: 1200px;}
+
+/* Navbar CSS design */
+
+header, footer {background-size: 1200px;}
+img.homepage-img {width: 250px;}
+
+/* Tickets section CSS design */
+.tickets-img {
+    margin: auto;
+    border-radius: 32px;
+    opacity: 0.7;
+    transition: .5s ease;
+}
+.ease-button {
+    transition: .5s ease;
+    opacity:0;
+}
+.ease-img:hover .tickets-img {opacity:1;}
+.ease-img:hover .ease-button {opacity: 1;}
+
+/* Shop section CSS design */
+.shop-img {
+    margin: auto;
+    border-radius: 32px;
+    opacity: 0.7;
+    transition: .5s ease;
+}
+.ease-add-button {
+    transition: .5s ease;
+    opacity:0;
+}
+.ease-shop-img:hover .shop-img {opacity:1;}
+.ease-shop-img:hover .ease-add-button {opacity: 1;}
+/*No highlight for phone and tablets*/
+.learn-more-button-a a::after{display:none;}
+.learn-more-button-b a::after{display:none;}
+.get-ticket-button a::after{display:none;}
+.see-prod a::after{display: none;}
+.add-cart-button a::after{display: none;}
+h6 {border-bottom: none;}
+ul.ft-li a{border-bottom: none;}
+}
+
+/* This is for desktop. Width bigger than 1200px */
+@media (min-width: 1200px) {
+body {
+    max-width: none;
+    background-image: url(./Homepage-images/Navbar-background.jpg);
+    background-attachment: fixed;
+    background-position: top;
+} 
+header {background-image: none;}
+img.homepage-img {width: 450px;}
+.navbar li a, .contact-menu li a {font-size: 1.35vw;}
+ul.navbar, .mobile-display-none, .contact-menu {display: flex;}
+.contact-menu li a{padding: 8px 8px 8px 16px;}
+.navbar li a {padding: 8px 8px 8px 16px;}
+
+/*Songs section CSS design */
+
+section.first-article, section.second-article  {width: 100%; }
+section.first-article {border-top-right-radius: 1000px;}
+section.second-article {border-top-left-radius: 1000px;}
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+   }
+article.songs-covers-row {display: flex;}
+.songs {
+    width: 60%;
+    margin: auto;
+    margin-top: 128px;
+    margin-left: 16px;
+    text-align: center;
+    font-size: 1.5vw;
+}
+.songs p {margin: 16px 0 16px 0;}
+h1 {margin-top: 32px;}
+.songs-img {
+    width: 60%;
+    margin: auto;
+    margin-left: 16px;
+    margin-bottom: 32px;
+    border-radius: 999px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    opacity: 0.7;
+    transition: .5s ease;
+}
+.learn-more-button-a {
+    margin-right: auto;
+    border-radius: 32px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.learn-more-button-a a {font-size: 2vw;}
+.songs-img:hover {opacity: 1;}
+
+/*Covers section CSS design */
+
+section.second-article {background-color: #21182d;}
+.second-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+   }
+.covers-img {
+    width: 60%;
+    margin: auto;
+    margin-right: 16px;
+    margin-bottom: 32px;
+    border-radius: 999px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    opacity: 0.7;
+    transition: .5s ease;
+}
+.covers-img:hover{opacity: 1;}
+.covers {
+    width: 60%;
+    margin: auto;
+    margin-top: 128px;
+    margin-right: 16px;
+    text-align: center;
+    font-size: 1.5vw;
+}
+.covers p {margin: 16px 0 16px 0;}
+h2 {margin-top: 32px;}
+.learn-more-button-b {
+    margin-right: auto;
+    border-radius: 32px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  
+}
+.learn-more-button-b a{font-size: 2vw;}
+
+/*Tickets section CSS design */
+section.third-article {background-image:linear-gradient(#e4e4e4,#e4e4e4);}
+
+/*Footer section CSS design */
+
+footer { background-size: 100%;}
+ul.ft-li {display: none;}
+div.social-icons-ft {display: block;}
+.social-icons-ft span {
+    font-size: 60px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+.social-icons-ft a {color: #e4e4e4;}
+.social-icons-ft a:hover{
+    color: red;
+    transition: linear 0.2s;
+}
+.social-icons-ft {margin: 64px 0 32px 0;   }
+form.feedback-message {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.feedback-message {
+    width: 95%;
+    padding: 8px 16px 8px 16px;
+    margin: 8px;
+}
+h6 {
+    pointer-events: none;
+    border-style: none;
+}
+.ft-li a:hover {
+    color: #21182d;
+    cursor: default;
+}
+label {
+    text-align: left;
+    font-size: 20px;
+}
+#email, #message {
+    background-color: #21182d;
+    color: #e4e4e4;
+    border-radius: 8px;
+    font-size: 20px;
+    width: 10%;
+    transition: width 0.4s ease-in-out;
+    outline: none;
+}
+#email:focus {width: 100%;}
+#message {
+    width: 10%;
+    resize: none;
+}
+#message:focus {width: 100%;}
+.submit {
+    width: 25%;
+   margin: auto;
+   margin-top: 8px;
+}
+.submit button {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    text-align:center;
+    background-color: #21182d;
+    color: #e4e4e4;
+    padding: 8px 16px 8px 16px;
+    border-radius: 8px;
+    border-style: none;
+}
+.submit button:hover {
+    color: red;
+    transition: linear 0.2s;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
