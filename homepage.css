@@ -431,462 +431,462 @@ div.copyright {
 }
 
 /* This is for tablets. Width from 768px to 992px */
-@media (min-width: 800px) {
-  body {
-    max-width: 1000px;
-  }
+    @media (min-width: 800px) {
+    body {
+      max-width: 1000px;
+    }
 
-  /* Navbar CSS design */
+    /* Navbar CSS design */
 
-  header {
-    background-size: 1000px;
-  }
-  img.homepage-img {
-    width: 175px;
-  }
-  .burger-button {
-    display: none;
-  }
-  ul.navbar,
-  .contact-menu,
-  .mobile-display-none {
-    display: flex;
-  }
-  .flex-container-wide {
-    display: flex;
-    justify-content: space-between;
-  }
-  ul.contact-menu {
-    padding-inline-start: 0;
-    text-shadow: 1px 4px 8px rgba(0, 0, 0, 0.3);
-  }
-  .navbar li a,
-  .contact-menu li a {
-    font-size: 1.9vw;
-  }
-  .contact-menu li a {
-    color: #d0d0d0;
-    font-weight: bold;
-    padding: 8px;
-    background-image: linear-gradient(
-      to top,
-      #21182d 3%,
-      #4c3767 7%,
-      transparent 20%
-    );
-    border-radius: 8px;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 16px;
-    transition: linear 0.2s;
-  }
-  .navbar li a {
-    padding: 8px;
-  }
-  .navbar a::after {
-    display: none;
-  }
-  .contact-menu li a:hover {
-    color: red;
-    background-image: linear-gradient(
-      to top,
-      #21182d,
-      #4c3767,
-      transparent 30%
-    );
-  }
-  .contact-menu li a:active {
-    color: red;
-  }
-  ul li a.active:hover {
-    color: red;
-    background-image: linear-gradient(to top, #21182d, #4c3767);
-  }
-  .navbar li a {
-    background-image: linear-gradient(
-      to top,
-      #21182d 3%,
-      #4c3767 7%,
-      transparent 20%
-    );
-    border-radius: 8px;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 16px;
-  }
-  .user-surf a:hover {
-    color: red;
-    background-image: linear-gradient(
-      to top,
-      #21182d,
-      #4c3767,
-      transparent 30%
-    );
-  }
+    header {
+      background-size: 1000px;
+    }
+    img.homepage-img {
+      width: 175px;
+    }
+    .burger-button {
+      display: none;
+    }
+    ul.navbar,
+    .contact-menu,
+    .mobile-display-none {
+      display: flex;
+    }
+    .flex-container-wide {
+      display: flex;
+      justify-content: space-between;
+    }
+    ul.contact-menu {
+      padding-inline-start: 0;
+      text-shadow: 1px 4px 8px rgba(0, 0, 0, 0.3);
+    }
+    .navbar li a,
+    .contact-menu li a {
+      font-size: 1.9vw;
+    }
+    .contact-menu li a {
+      color: #d0d0d0;
+      font-weight: bold;
+      padding: 8px;
+      background-image: linear-gradient(
+        to top,
+        #21182d 3%,
+        #4c3767 7%,
+        transparent 20%
+      );
+      border-radius: 8px;
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 16px;
+      transition: linear 0.2s;
+    }
+    .navbar li a {
+      padding: 8px;
+    }
+    .navbar a::after {
+      display: none;
+    }
+    .contact-menu li a:hover {
+      color: red;
+      background-image: linear-gradient(
+        to top,
+        #21182d,
+        #4c3767,
+        transparent 30%
+      );
+    }
+    .contact-menu li a:active {
+      color: red;
+    }
+    ul li a.active:hover {
+      color: red;
+      background-image: linear-gradient(to top, #21182d, #4c3767);
+    }
+    .navbar li a {
+      background-image: linear-gradient(
+        to top,
+        #21182d 3%,
+        #4c3767 7%,
+        transparent 20%
+      );
+      border-radius: 8px;
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 16px;
+    }
+    .user-surf a:hover {
+      color: red;
+      background-image: linear-gradient(
+        to top,
+        #21182d,
+        #4c3767,
+        transparent 30%
+      );
+    }
 
-  /*Songs section CSS design */
+    /*Songs section CSS design */
 
-  .songs {
-    width: 65%;
-    font-size: 2vw;
-  }
-  .songs-img {
-    width: 35%;
-    border-radius: 32px;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 64px;
-  }
-  .learn-more-button-a {
-    border-radius: 16px;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 32px;
-  }
-  h1 {
-    text-align: center;
-  }
+    .songs {
+      width: 65%;
+      font-size: 2vw;
+    }
+    .songs-img {
+      width: 35%;
+      border-radius: 32px;
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 64px;
+    }
+    .learn-more-button-a {
+      border-radius: 16px;
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 32px;
+    }
+    h1 {
+      text-align: center;
+    }
 
-  /*Covers section CSS design */
+    /*Covers section CSS design */
 
-  .covers-img {
-    width: 35%;
-    border-radius: 32px;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 64px;
-  }
-  .covers {
-    width: 65%;
-    font-size: 2vw;
-  }
-  .learn-more-button-b {
-    border-radius: 16px;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 32px;
-  }
-  h2 {
-    text-align: center;
-  }
+    .covers-img {
+      width: 35%;
+      border-radius: 32px;
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 64px;
+    }
+    .covers {
+      width: 65%;
+      font-size: 2vw;
+    }
+    .learn-more-button-b {
+      border-radius: 16px;
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 32px;
+    }
+    h2 {
+      text-align: center;
+    }
 
-  /*Tickets section CSS design */
+    /*Tickets section CSS design */
 
-  .tickets-img,
-  .get-ticket-button {
-    width: 75%;
-  }
+    .tickets-img,
+    .get-ticket-button {
+      width: 75%;
+    }
 
-  /*Shop section CSS design */
+    /*Shop section CSS design */
 
-  .shop,
-  .shop-img,
-  .add-cart-button {
-    width: 75%;
-  }
+    .shop,
+    .shop-img,
+    .add-cart-button {
+      width: 75%;
+    }
 
-  /*Footer section CSS design */
+    /*Footer section CSS design */
 
-  footer {
-    background-size: 1000px;
-  }
-}
+    footer {
+      background-size: 1000px;
+    }
+    }
 
 /* This is for laptops. Width from 992px to 1200px */
-@media (min-width: 1000px) {
-  body {
-    max-width: 1200px;
-  }
+    @media (min-width: 1000px) {
+      body {
+        max-width: 1200px;
+      }
 
-  /* Navbar CSS design */
+      /* Navbar CSS design */
 
-  header,
-  footer {
-    background-size: 1200px;
-  }
-  img.homepage-img {
-    width: 250px;
-  }
+      header,
+      footer {
+        background-size: 1200px;
+      }
+      img.homepage-img {
+        width: 250px;
+      }
 
-  /* Tickets section CSS design */
-  .tickets-img {
-    margin: auto;
-    border-radius: 32px;
-    opacity: 0.7;
-    transition: 0.5s ease;
-  }
-  .ease-button {
-    transition: 0.5s ease;
-    opacity: 0;
-  }
-  .ease-img:hover .tickets-img {
-    opacity: 1;
-  }
-  .ease-img:hover .ease-button {
-    opacity: 1;
-  }
+      /* Tickets section CSS design */
+      .tickets-img {
+        margin: auto;
+        border-radius: 32px;
+        opacity: 0.7;
+        transition: 0.5s ease;
+      }
+      .ease-button {
+        transition: 0.5s ease;
+        opacity: 0;
+      }
+      .ease-img:hover .tickets-img {
+        opacity: 1;
+      }
+      .ease-img:hover .ease-button {
+        opacity: 1;
+      }
 
-  /* Shop section CSS design */
-  .shop-img {
-    margin: auto;
-    border-radius: 32px;
-    opacity: 0.7;
-    transition: 0.5s ease;
-  }
-  .ease-add-button {
-    transition: 0.5s ease;
-    opacity: 0;
-  }
-  .ease-shop-img:hover .shop-img {
-    opacity: 1;
-  }
-  .ease-shop-img:hover .ease-add-button {
-    opacity: 1;
-  }
-  /*No highlight for phone and tablets*/
-  .learn-more-button-a a::after {
-    display: none;
-  }
-  .learn-more-button-b a::after {
-    display: none;
-  }
-  .get-ticket-button a::after {
-    display: none;
-  }
-  .see-prod a::after {
-    display: none;
-  }
-  .add-cart-button a::after {
-    display: none;
-  }
-  h6 {
-    border-bottom: none;
-  }
-  ul.ft-li a {
-    border-bottom: none;
-  }
-}
+      /* Shop section CSS design */
+      .shop-img {
+        margin: auto;
+        border-radius: 32px;
+        opacity: 0.7;
+        transition: 0.5s ease;
+      }
+      .ease-add-button {
+        transition: 0.5s ease;
+        opacity: 0;
+      }
+      .ease-shop-img:hover .shop-img {
+        opacity: 1;
+      }
+      .ease-shop-img:hover .ease-add-button {
+        opacity: 1;
+      }
+      /*No highlight for phone and tablets*/
+      .learn-more-button-a a::after {
+        display: none;
+      }
+      .learn-more-button-b a::after {
+        display: none;
+      }
+      .get-ticket-button a::after {
+        display: none;
+      }
+      .see-prod a::after {
+        display: none;
+      }
+      .add-cart-button a::after {
+        display: none;
+      }
+      h6 {
+        border-bottom: none;
+      }
+      ul.ft-li a {
+        border-bottom: none;
+      }
+    }
 
 /* This is for desktop. Width bigger than 1200px */
-@media (min-width: 1200px) {
-  body {
-    max-width: none;
-    background-image: url(./Homepage-images/Navbar-background.jpg);
-    background-attachment: fixed;
-    background-position: top;
-  }
-  header {
-    background-image: none;
-  }
-  img.homepage-img {
-    width: 450px;
-  }
-  .navbar li a,
-  .contact-menu li a {
-    font-size: 1.35vw;
-  }
-  ul.navbar,
-  .mobile-display-none,
-  .contact-menu {
-    display: flex;
-  }
-  .contact-menu li a {
-    padding: 8px 8px 8px 16px;
-  }
-  .navbar li a {
-    padding: 8px 8px 8px 16px;
-  }
+    @media (min-width: 1200px) {
+      body {
+        max-width: none;
+        background-image: url(./Homepage-images/Navbar-background.jpg);
+        background-attachment: fixed;
+        background-position: top;
+      }
+      header {
+        background-image: none;
+      }
+      img.homepage-img {
+        width: 450px;
+      }
+      .navbar li a,
+      .contact-menu li a {
+        font-size: 1.35vw;
+      }
+      ul.navbar,
+      .mobile-display-none,
+      .contact-menu {
+        display: flex;
+      }
+      .contact-menu li a {
+        padding: 8px 8px 8px 16px;
+      }
+      .navbar li a {
+        padding: 8px 8px 8px 16px;
+      }
 
-  /*Songs section CSS design */
+      /*Songs section CSS design */
 
-  header.first-article,
-  section.second-article {
-    width: 100%;
-  }
-  header.first-article {
-    border-top-right-radius: 1000px;
-  }
-  section.second-article {
-    border-top-left-radius: 1000px;
-  }
-  .container {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column-reverse;
-  }
-  article.songs-covers-row {
-    display: flex;
-  }
-  .songs {
-    width: 60%;
-    margin: auto;
-    margin-top: 128px;
-    margin-left: 16px;
-    text-align: center;
-    font-size: 1.5vw;
-  }
-  .songs p {
-    margin: 16px 0 16px 0;
-  }
-  h1 {
-    margin-top: 32px;
-  }
-  .songs-img {
-    width: 60%;
-    margin: auto;
-    margin-left: 16px;
-    margin-bottom: 32px;
-    border-radius: 999px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    opacity: 0.7;
-    transition: 0.5s ease;
-  }
-  .learn-more-button-a {
-    margin-right: auto;
-    border-radius: 32px;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-  }
-  .learn-more-button-a a {
-    font-size: 2vw;
-  }
-  .songs-img:hover {
-    opacity: 1;
-  }
+      header.first-article,
+      section.second-article {
+        width: 100%;
+      }
+      header.first-article {
+        border-top-right-radius: 1000px;
+      }
+      section.second-article {
+        border-top-left-radius: 1000px;
+      }
+      .container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+      }
+      article.songs-covers-row {
+        display: flex;
+      }
+      .songs {
+        width: 60%;
+        margin: auto;
+        margin-top: 128px;
+        margin-left: 16px;
+        text-align: center;
+        font-size: 1.5vw;
+      }
+      .songs p {
+        margin: 16px 0 16px 0;
+      }
+      h1 {
+        margin-top: 32px;
+      }
+      .songs-img {
+        width: 60%;
+        margin: auto;
+        margin-left: 16px;
+        margin-bottom: 32px;
+        border-radius: 999px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        opacity: 0.7;
+        transition: 0.5s ease;
+      }
+      .learn-more-button-a {
+        margin-right: auto;
+        border-radius: 32px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+      .learn-more-button-a a {
+        font-size: 2vw;
+      }
+      .songs-img:hover {
+        opacity: 1;
+      }
 
-  /*Covers section CSS design */
+      /*Covers section CSS design */
 
-  section.second-article {
-    background-color: #21182d;
-  }
-  .second-container {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column-reverse;
-  }
-  .covers-img {
-    width: 60%;
-    margin: auto;
-    margin-right: 16px;
-    margin-bottom: 32px;
-    border-radius: 999px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    opacity: 0.7;
-    transition: 0.5s ease;
-  }
-  .covers-img:hover {
-    opacity: 1;
-  }
-  .covers {
-    width: 60%;
-    margin: auto;
-    margin-top: 128px;
-    margin-right: 16px;
-    text-align: center;
-    font-size: 1.5vw;
-  }
-  .covers p {
-    margin: 16px 0 16px 0;
-  }
-  h2 {
-    margin-top: 32px;
-  }
-  .learn-more-button-b {
-    margin-right: auto;
-    border-radius: 32px;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-  }
-  .learn-more-button-b a {
-    font-size: 2vw;
-  }
+      section.second-article {
+        background-color: #21182d;
+      }
+      .second-container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+      }
+      .covers-img {
+        width: 60%;
+        margin: auto;
+        margin-right: 16px;
+        margin-bottom: 32px;
+        border-radius: 999px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        opacity: 0.7;
+        transition: 0.5s ease;
+      }
+      .covers-img:hover {
+        opacity: 1;
+      }
+      .covers {
+        width: 60%;
+        margin: auto;
+        margin-top: 128px;
+        margin-right: 16px;
+        text-align: center;
+        font-size: 1.5vw;
+      }
+      .covers p {
+        margin: 16px 0 16px 0;
+      }
+      h2 {
+        margin-top: 32px;
+      }
+      .learn-more-button-b {
+        margin-right: auto;
+        border-radius: 32px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+      .learn-more-button-b a {
+        font-size: 2vw;
+      }
 
-  /*Tickets section CSS design */
-  section.third-article {
-    background-image: linear-gradient(#e4e4e4, #e4e4e4);
-  }
+      /*Tickets section CSS design */
+      section.third-article {
+        background-image: linear-gradient(#e4e4e4, #e4e4e4);
+      }
 
-  /*Footer section CSS design */
+      /*Footer section CSS design */
 
-  footer {
-    background-size: 100%;
-  }
-  ul.ft-li {
-    display: none;
-  }
-  div.social-icons-ft {
-    display: block;
-  }
-  .social-icons-ft span {
-    font-size: 60px;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-  .social-icons-ft a {
-    color: #e4e4e4;
-  }
-  .social-icons-ft a:hover {
-    color: red;
-    transition: linear 0.2s;
-  }
-  .social-icons-ft {
-    margin: 64px 0 32px 0;
-  }
-  form.feedback-message {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-  }
-  .feedback-message {
-    width: 95%;
-    padding: 8px 16px 8px 16px;
-    margin: 8px;
-  }
-  h6 {
-    pointer-events: none;
-    border-style: none;
-  }
-  .ft-li a:hover {
-    color: #21182d;
-    cursor: default;
-  }
-  label {
-    text-align: left;
-    font-size: 20px;
-  }
-  #email,
-  #message {
-    background-color: #21182d;
-    color: #e4e4e4;
-    border-radius: 8px;
-    font-size: 20px;
-    width: 10%;
-    transition: width 0.4s ease-in-out;
-    outline: none;
-  }
-  #email:focus {
-    width: 100%;
-  }
-  #message {
-    width: 10%;
-    resize: none;
-  }
-  #message:focus {
-    width: 100%;
-  }
-  .submit {
-    width: 25%;
-    margin: auto;
-    margin-top: 8px;
-  }
-  .submit button {
-    font-family: "Lato", sans-serif;
-    font-weight: bold;
-    text-align: center;
-    background-color: #21182d;
-    color: #e4e4e4;
-    padding: 8px 16px 8px 16px;
-    border-radius: 8px;
-    border-style: none;
-  }
-  .submit button:hover {
-    color: red;
-    transition: linear 0.2s;
-  }
-}
+      footer {
+        background-size: 100%;
+      }
+      ul.ft-li {
+        display: none;
+      }
+      div.social-icons-ft {
+        display: block;
+      }
+      .social-icons-ft span {
+        font-size: 60px;
+        padding-left: 32px;
+        padding-right: 32px;
+      }
+      .social-icons-ft a {
+        color: #e4e4e4;
+      }
+      .social-icons-ft a:hover {
+        color: red;
+        transition: linear 0.2s;
+      }
+      .social-icons-ft {
+        margin: 64px 0 32px 0;
+      }
+      form.feedback-message {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+      }
+      .feedback-message {
+        width: 95%;
+        padding: 8px 16px 8px 16px;
+        margin: 8px;
+      }
+      h6 {
+        pointer-events: none;
+        border-style: none;
+      }
+      .ft-li a:hover {
+        color: #21182d;
+        cursor: default;
+      }
+      label {
+        text-align: left;
+        font-size: 20px;
+      }
+      #email,
+      #message {
+        background-color: #21182d;
+        color: #e4e4e4;
+        border-radius: 8px;
+        font-size: 20px;
+        width: 10%;
+        transition: width 0.4s ease-in-out;
+        outline: none;
+      }
+      #email:focus {
+        width: 100%;
+      }
+      #message {
+        width: 10%;
+        resize: none;
+      }
+      #message:focus {
+        width: 100%;
+      }
+      .submit {
+        width: 25%;
+        margin: auto;
+        margin-top: 8px;
+      }
+      .submit button {
+        font-family: "Lato", sans-serif;
+        font-weight: bold;
+        text-align: center;
+        background-color: #21182d;
+        color: #e4e4e4;
+        padding: 8px 16px 8px 16px;
+        border-radius: 8px;
+        border-style: none;
+      }
+      .submit button:hover {
+        color: red;
+        transition: linear 0.2s;
+      }
+    }
