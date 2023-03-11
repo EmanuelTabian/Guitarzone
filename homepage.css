@@ -5,9 +5,58 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smootthing: grayscale;
 }
+:root {
+  --purple-gradient: linear-gradient(#21182d, #4c3767);
+  --purple-gradient-top: linear-gradient(to top, #21182d, #4c3767);
+  --white: #e4e4e4;
+  --gray: #d0d0d0;
+  --gray-gradient: linear-gradient(#b0b0b0, #e4e4e4);
+}
+
+/* Burger icon blanket design */
+nav#burger-icon-container {
+  position: absolute;
+  width: 100%;
+  height: 156.99px;
+  background-color: rgb(33, 24, 45, 0.9);
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  display: none;
+}
+ul.burger-icon-content {
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: #b0b0b0;
+  padding-inline-start: 0;
+}
+li.burger-icon-list {
+  padding: 10px;
+}
+li.burger-icon-list a {
+  color: #b0b0b0;
+}
+li.burger-icon-list a:hover {
+  color: #e4e4e4;
+  transition: 0.4s;
+}
+button.material-symbols-outlined {
+  position: absolute;
+  right: 8px;
+  background: none;
+  padding: 8px;
+  border-style: none;
+  transition: 0.4s;
+  color: #b0b0b0;
+}
+button.material-symbols-outlined:hover {
+  color: #e4e4e4;
+}
+
 /* Navbar CSS design */
 header {
-  background-image: url("/Homepage-images/Navbar-background.jpg");
+  background-image: url("Homepage-images/Navbar-background.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 800px;
@@ -25,7 +74,7 @@ ul.navbar {
   padding-inline-start: 0;
 }
 ul li a.active {
-  background-image: linear-gradient(to top, #21182d, #4c3767);
+  background-image: var(--purple-gradient-top);
   border-radius: 8px;
   border-top-left-radius: 0px;
   border-bottom-left-radius: 16px;
@@ -67,9 +116,12 @@ a {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
   color: #d0d0d0;
   position: relative;
-  visibility: visible;
   text-decoration: none;
   padding: 8px 16px 8px 16px;
+}
+#burger-btn {
+  opacity: 1;
+  transition: 0.5s;
 }
 .mobile-display-none {
   display: none;
@@ -77,13 +129,14 @@ a {
 /*Songs section CSS design */
 
 header.first-article {
-  background-image: linear-gradient(#b0b0b0, #e4e4e4);
+  background-image: var(--gray-gradient);
 }
 .container {
   display: flex;
   justify-content: flex-start;
   flex-direction: row;
 }
+
 .songs {
   width: 50%;
   margin: 32px 32px 32px 8px;
@@ -106,7 +159,7 @@ header.first-article {
 .learn-more-button-a {
   margin-right: auto;
   text-align: center;
-  background-image: linear-gradient(to right, #21182d, #4c3767);
+  background-image: var(--purple-gradient);
   padding: 8px 16px 8px 16px;
   border-radius: 8px;
   border-top-left-radius: 0px;
@@ -134,9 +187,8 @@ header.first-article {
 }
 
 /*Covers section CSS design */
-
 section.second-article {
-  background-image: linear-gradient(#21182d, #4c3767);
+  background-image: var(--purple-gradient-top);
 }
 .second-container {
   display: flex;
@@ -152,7 +204,7 @@ section.second-article {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .covers {
-  color: #e4e4e4;
+  color: var(--white);
   width: 50%;
   margin: 32px 8px 32px 32px;
   text-align: left;
@@ -172,7 +224,7 @@ h2 {
   margin-left: auto;
   text-align: center;
   font-weight: bold;
-  background-color: #d0d0d0;
+  background-color: var(--gray);
   padding: 8px 16px 8px 16px;
   border-radius: 8px;
   border-top-right-radius: 0px;
@@ -201,7 +253,7 @@ h2 {
 /*Tickets section CSS design */
 
 section.third-article {
-  background-image: linear-gradient(#b0b0b0, #e4e4e4);
+  background-image: var(--gray-gradient);
 }
 .third-container {
   display: flex;
@@ -230,14 +282,14 @@ h3 {
   box-sizing: border-box;
   margin: auto;
   text-align: center;
-  background-image: linear-gradient(to right, #21182d, #4c3767);
+  background-image: var(--purple-gradient);
   padding: 8px 16px 8px 16px;
   border-radius: 8px;
   text-shadow: 1px 4px 8px rgba(0, 0, 0, 0.3);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .get-ticket-button a {
-  color: #d0d0d0;
+  color: var(--gray);
   font-size: 2.4vw;
 }
 .get-ticket-button a::after {
@@ -258,7 +310,7 @@ h3 {
 /*Shop section CSS design */
 
 section.fourth-article {
-  background-image: linear-gradient(#21182d, #4c3767);
+  background-image: var(--purple-gradient);
 }
 .fourth-container {
   display: flex;
@@ -275,7 +327,7 @@ section.fourth-article {
 h4 {
   font-size: 25px;
   margin: auto;
-  color: #e4e4e4;
+  color: var(--white);
 }
 .shop-img {
   width: 100%;
@@ -288,7 +340,7 @@ h4 {
   box-sizing: border-box;
   margin: auto;
   text-align: center;
-  background-image: linear-gradient(to right, #b0b0b0, #e4e4e4);
+  background-image: var(--gray-gradient);
   padding: 8px 16px 8px 16px;
   border-radius: 8px;
   text-shadow: 1px 4px 8px rgba(0, 0, 0, 0.3);
@@ -313,7 +365,7 @@ h4 {
   color: red;
 }
 .see-prod a {
-  color: #e4e4e4;
+  color: var(--white);
 }
 .see-prod a:hover {
   color: red;
@@ -350,8 +402,8 @@ footer {
   text-align: center;
   text-shadow: 1px 4px 8px rgba(0, 0, 0, 0.3);
   margin: 16px 8px 16px 32px;
-  background-image: linear-gradient(#21182d, #4c3767);
-  color: #e4e4e4;
+  background-image: var(--purple-gradient);
+  color: var(--white);
   border-radius: 32px;
   border-top-left-radius: 0px;
   padding-inline-start: 0;
@@ -369,11 +421,11 @@ ul.ft-li {
 }
 .ft-li a {
   text-decoration: none;
-  color: #d0d0d0;
+  color: var(--gray);
   font-weight: bold;
 }
 ul.ft-li a {
-  border-bottom: 1.9px #e4e4e4 solid;
+  border-bottom: 1.9px var(--white) solid;
 }
 .ft-li a:hover {
   color: red;
@@ -391,7 +443,7 @@ form.feedback-message {
   font-weight: bold;
   margin: 16px 32px 16px 8px;
   text-shadow: 1px 4px 8px rgba(0, 0, 0, 0.3);
-  background-image: linear-gradient(#b0b0b0, #e4e4e4);
+  background-image: var(--gray-gradient);
   color: #21182d;
   border-radius: 32px;
   border-top-right-radius: 0px;
@@ -418,7 +470,7 @@ div.social-icons-ft {
 
 div.copyright {
   width: 100%;
-  background-image: linear-gradient(to right, #21182d, #4c3767);
+  background-image: var(--purple-gradient);
   padding: 8px 0 8px 0;
 }
 .cright {
@@ -431,462 +483,462 @@ div.copyright {
 }
 
 /* This is for tablets. Width from 768px to 992px */
-    @media (min-width: 800px) {
-    body {
-      max-width: 1000px;
-    }
+@media (min-width: 800px) {
+  body {
+    max-width: 1000px;
+  }
+  /* Navbar CSS design */
 
-    /* Navbar CSS design */
+  header {
+    background-size: 1000px;
+  }
+  img.homepage-img {
+    width: 175px;
+  }
+  #burger-btn {
+    display: none;
+  }
 
-    header {
-      background-size: 1000px;
-    }
-    img.homepage-img {
-      width: 175px;
-    }
-    .burger-button {
-      display: none;
-    }
-    ul.navbar,
-    .contact-menu,
-    .mobile-display-none {
-      display: flex;
-    }
-    .flex-container-wide {
-      display: flex;
-      justify-content: space-between;
-    }
-    ul.contact-menu {
-      padding-inline-start: 0;
-      text-shadow: 1px 4px 8px rgba(0, 0, 0, 0.3);
-    }
-    .navbar li a,
-    .contact-menu li a {
-      font-size: 1.9vw;
-    }
-    .contact-menu li a {
-      color: #d0d0d0;
-      font-weight: bold;
-      padding: 8px;
-      background-image: linear-gradient(
-        to top,
-        #21182d 3%,
-        #4c3767 7%,
-        transparent 20%
-      );
-      border-radius: 8px;
-      border-top-left-radius: 0px;
-      border-bottom-left-radius: 16px;
-      transition: linear 0.2s;
-    }
-    .navbar li a {
-      padding: 8px;
-    }
-    .navbar a::after {
-      display: none;
-    }
-    .contact-menu li a:hover {
-      color: red;
-      background-image: linear-gradient(
-        to top,
-        #21182d,
-        #4c3767,
-        transparent 30%
-      );
-    }
-    .contact-menu li a:active {
-      color: red;
-    }
-    ul li a.active:hover {
-      color: red;
-      background-image: linear-gradient(to top, #21182d, #4c3767);
-    }
-    .navbar li a {
-      background-image: linear-gradient(
-        to top,
-        #21182d 3%,
-        #4c3767 7%,
-        transparent 20%
-      );
-      border-radius: 8px;
-      border-top-left-radius: 0px;
-      border-bottom-left-radius: 16px;
-    }
-    .user-surf a:hover {
-      color: red;
-      background-image: linear-gradient(
-        to top,
-        #21182d,
-        #4c3767,
-        transparent 30%
-      );
-    }
+  ul.navbar,
+  .contact-menu,
+  .mobile-display-none {
+    display: flex;
+  }
+  .flex-container-wide {
+    display: flex;
+    justify-content: space-between;
+  }
+  ul.contact-menu {
+    padding-inline-start: 0;
+    text-shadow: 1px 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  .navbar li a,
+  .contact-menu li a {
+    font-size: 1.9vw;
+  }
+  .contact-menu li a {
+    color: #d0d0d0;
+    font-weight: bold;
+    padding: 8px;
+    background-image: linear-gradient(
+      to top,
+      #21182d 3%,
+      #4c3767 7%,
+      transparent 20%
+    );
+    border-radius: 8px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 16px;
+    transition: linear 0.2s;
+  }
+  .navbar li a {
+    padding: 8px;
+  }
+  .navbar a::after {
+    display: none;
+  }
+  .contact-menu li a:hover {
+    color: red;
+    background-image: linear-gradient(
+      to top,
+      #21182d,
+      #4c3767,
+      transparent 30%
+    );
+  }
+  .contact-menu li a:active {
+    color: red;
+  }
+  ul li a.active:hover {
+    color: red;
+    background-image: linear-gradient(to top, #21182d, #4c3767);
+  }
+  .navbar li a {
+    background-image: linear-gradient(
+      to top,
+      #21182d 3%,
+      #4c3767 7%,
+      transparent 20%
+    );
+    border-radius: 8px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 16px;
+  }
+  .user-surf a:hover {
+    color: red;
+    background-image: linear-gradient(
+      to top,
+      #21182d,
+      #4c3767,
+      transparent 30%
+    );
+  }
 
-    /*Songs section CSS design */
+  /*Songs section CSS design */
 
-    .songs {
-      width: 65%;
-      font-size: 2vw;
-    }
-    .songs-img {
-      width: 35%;
-      border-radius: 32px;
-      border-top-left-radius: 0px;
-      border-bottom-left-radius: 64px;
-    }
-    .learn-more-button-a {
-      border-radius: 16px;
-      border-top-left-radius: 0px;
-      border-bottom-left-radius: 32px;
-    }
-    h1 {
-      text-align: center;
-    }
+  .songs {
+    width: 65%;
+    font-size: 2vw;
+  }
+  .songs-img {
+    width: 35%;
+    border-radius: 32px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 64px;
+  }
+  .learn-more-button-a {
+    border-radius: 16px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 32px;
+  }
+  h1 {
+    text-align: center;
+  }
 
-    /*Covers section CSS design */
+  /*Covers section CSS design */
 
-    .covers-img {
-      width: 35%;
-      border-radius: 32px;
-      border-top-right-radius: 0px;
-      border-bottom-right-radius: 64px;
-    }
-    .covers {
-      width: 65%;
-      font-size: 2vw;
-    }
-    .learn-more-button-b {
-      border-radius: 16px;
-      border-top-right-radius: 0px;
-      border-bottom-right-radius: 32px;
-    }
-    h2 {
-      text-align: center;
-    }
+  .covers-img {
+    width: 35%;
+    border-radius: 32px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 64px;
+  }
+  .covers {
+    width: 65%;
+    font-size: 2vw;
+  }
+  .learn-more-button-b {
+    border-radius: 16px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 32px;
+  }
+  h2 {
+    text-align: center;
+  }
 
-    /*Tickets section CSS design */
+  /*Tickets section CSS design */
 
-    .tickets-img,
-    .get-ticket-button {
-      width: 75%;
-    }
+  .tickets-img,
+  .get-ticket-button {
+    width: 75%;
+  }
 
-    /*Shop section CSS design */
+  /*Shop section CSS design */
 
-    .shop,
-    .shop-img,
-    .add-cart-button {
-      width: 75%;
-    }
+  .shop,
+  .shop-img,
+  .add-cart-button {
+    width: 75%;
+  }
 
-    /*Footer section CSS design */
+  /*Footer section CSS design */
 
-    footer {
-      background-size: 1000px;
-    }
-    }
+  footer {
+    background-size: 1000px;
+  }
+}
 
 /* This is for laptops. Width from 992px to 1200px */
-    @media (min-width: 1000px) {
-      body {
-        max-width: 1200px;
-      }
+@media (min-width: 1000px) {
+  body {
+    max-width: 1200px;
+  }
 
-      /* Navbar CSS design */
+  /* Navbar CSS design */
 
-      header,
-      footer {
-        background-size: 1200px;
-      }
-      img.homepage-img {
-        width: 250px;
-      }
+  header,
+  footer {
+    background-size: 1200px;
+  }
+  img.homepage-img {
+    width: 250px;
+  }
 
-      /* Tickets section CSS design */
-      .tickets-img {
-        margin: auto;
-        border-radius: 32px;
-        opacity: 0.7;
-        transition: 0.5s ease;
-      }
-      .ease-button {
-        transition: 0.5s ease;
-        opacity: 0;
-      }
-      .ease-img:hover .tickets-img {
-        opacity: 1;
-      }
-      .ease-img:hover .ease-button {
-        opacity: 1;
-      }
+  /* Tickets section CSS design */
+  .tickets-img {
+    margin: auto;
+    border-radius: 32px;
+    opacity: 0.7;
+    transition: 0.5s ease;
+  }
+  .ease-button {
+    transition: 0.5s ease;
+    opacity: 0;
+  }
+  .ease-img:hover .tickets-img {
+    opacity: 1;
+  }
+  .ease-img:hover .ease-button {
+    opacity: 1;
+  }
 
-      /* Shop section CSS design */
-      .shop-img {
-        margin: auto;
-        border-radius: 32px;
-        opacity: 0.7;
-        transition: 0.5s ease;
-      }
-      .ease-add-button {
-        transition: 0.5s ease;
-        opacity: 0;
-      }
-      .ease-shop-img:hover .shop-img {
-        opacity: 1;
-      }
-      .ease-shop-img:hover .ease-add-button {
-        opacity: 1;
-      }
-      /*No highlight for phone and tablets*/
-      .learn-more-button-a a::after {
-        display: none;
-      }
-      .learn-more-button-b a::after {
-        display: none;
-      }
-      .get-ticket-button a::after {
-        display: none;
-      }
-      .see-prod a::after {
-        display: none;
-      }
-      .add-cart-button a::after {
-        display: none;
-      }
-      h6 {
-        border-bottom: none;
-      }
-      ul.ft-li a {
-        border-bottom: none;
-      }
-    }
+  /* Shop section CSS design */
+  .shop-img {
+    margin: auto;
+    border-radius: 32px;
+    opacity: 0.7;
+    transition: 0.5s ease;
+  }
+  .ease-add-button {
+    transition: 0.5s ease;
+    opacity: 0;
+  }
+  .ease-shop-img:hover .shop-img {
+    opacity: 1;
+  }
+  .ease-shop-img:hover .ease-add-button {
+    opacity: 1;
+  }
+  /*No highlight for phone and tablets*/
+  .learn-more-button-a a::after {
+    display: none;
+  }
+  .learn-more-button-b a::after {
+    display: none;
+  }
+  .get-ticket-button a::after {
+    display: none;
+  }
+  .see-prod a::after {
+    display: none;
+  }
+  .add-cart-button a::after {
+    display: none;
+  }
+  h6 {
+    border-bottom: none;
+  }
+  ul.ft-li a {
+    border-bottom: none;
+  }
+}
 
 /* This is for desktop. Width bigger than 1200px */
-    @media (min-width: 1200px) {
-      body {
-        max-width: none;
-        background-image: url(./Homepage-images/Navbar-background.jpg);
-        background-attachment: fixed;
-        background-position: top;
-      }
-      header {
-        background-image: none;
-      }
-      img.homepage-img {
-        width: 450px;
-      }
-      .navbar li a,
-      .contact-menu li a {
-        font-size: 1.35vw;
-      }
-      ul.navbar,
-      .mobile-display-none,
-      .contact-menu {
-        display: flex;
-      }
-      .contact-menu li a {
-        padding: 8px 8px 8px 16px;
-      }
-      .navbar li a {
-        padding: 8px 8px 8px 16px;
-      }
+@media (min-width: 1200px) {
+  body {
+    max-width: none;
+    background-image: url(./Homepage-images/Navbar-background.jpg);
+    background-attachment: fixed;
+    background-position: top;
+  }
+  header {
+    background-image: none;
+  }
+  img.homepage-img {
+    width: 450px;
+  }
+  .navbar li a,
+  .contact-menu li a {
+    font-size: 1.35vw;
+  }
+  ul.navbar,
+  .mobile-display-none,
+  .contact-menu {
+    display: flex;
+  }
+  .contact-menu li a {
+    padding: 8px 8px 8px 16px;
+  }
+  .navbar li a {
+    padding: 8px 8px 8px 16px;
+  }
 
-      /*Songs section CSS design */
+  /*Songs section CSS design */
 
-      header.first-article,
-      section.second-article {
-        width: 100%;
-      }
-      header.first-article {
-        border-top-right-radius: 1000px;
-      }
-      section.second-article {
-        border-top-left-radius: 1000px;
-      }
-      .container {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column-reverse;
-      }
-      article.songs-covers-row {
-        display: flex;
-      }
-      .songs {
-        width: 60%;
-        margin: auto;
-        margin-top: 128px;
-        margin-left: 16px;
-        text-align: center;
-        font-size: 1.5vw;
-      }
-      .songs p {
-        margin: 16px 0 16px 0;
-      }
-      h1 {
-        margin-top: 32px;
-      }
-      .songs-img {
-        width: 60%;
-        margin: auto;
-        margin-left: 16px;
-        margin-bottom: 32px;
-        border-radius: 999px;
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
-        opacity: 0.7;
-        transition: 0.5s ease;
-      }
-      .learn-more-button-a {
-        margin-right: auto;
-        border-radius: 32px;
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
-      }
-      .learn-more-button-a a {
-        font-size: 2vw;
-      }
-      .songs-img:hover {
-        opacity: 1;
-      }
+  header.first-article,
+  section.second-article {
+    width: 100%;
+  }
+  header.first-article {
+    border-top-right-radius: 1000px;
+  }
+  section.second-article {
+    border-top-left-radius: 1000px;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+  }
+  article.songs-covers-row {
+    display: flex;
+  }
+  .songs {
+    width: 60%;
+    margin: auto;
+    margin-top: 128px;
+    margin-left: 16px;
+    text-align: center;
+    font-size: 1.5vw;
+  }
+  .songs p {
+    margin: 16px 0 16px 0;
+  }
+  h1 {
+    margin-top: 32px;
+  }
+  .songs-img {
+    width: 60%;
+    margin: auto;
+    margin-left: 16px;
+    margin-bottom: 32px;
+    border-radius: 999px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    opacity: 0.7;
+    transition: 0.5s ease;
+  }
+  .learn-more-button-a {
+    margin-right: auto;
+    border-radius: 32px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .learn-more-button-a a {
+    font-size: 2vw;
+  }
+  .songs-img:hover {
+    opacity: 1;
+  }
 
-      /*Covers section CSS design */
+  /*Covers section CSS design */
 
-      section.second-article {
-        background-color: #21182d;
-      }
-      .second-container {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column-reverse;
-      }
-      .covers-img {
-        width: 60%;
-        margin: auto;
-        margin-right: 16px;
-        margin-bottom: 32px;
-        border-radius: 999px;
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
-        opacity: 0.7;
-        transition: 0.5s ease;
-      }
-      .covers-img:hover {
-        opacity: 1;
-      }
-      .covers {
-        width: 60%;
-        margin: auto;
-        margin-top: 128px;
-        margin-right: 16px;
-        text-align: center;
-        font-size: 1.5vw;
-      }
-      .covers p {
-        margin: 16px 0 16px 0;
-      }
-      h2 {
-        margin-top: 32px;
-      }
-      .learn-more-button-b {
-        margin-right: auto;
-        border-radius: 32px;
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
-      }
-      .learn-more-button-b a {
-        font-size: 2vw;
-      }
+  section.second-article {
+    background-color: #21182d;
+  }
+  .second-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+  }
+  .covers-img {
+    width: 60%;
+    margin: auto;
+    margin-right: 16px;
+    margin-bottom: 32px;
+    border-radius: 999px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    opacity: 0.7;
+    transition: 0.5s ease;
+  }
+  .covers-img:hover {
+    opacity: 1;
+  }
+  .covers {
+    width: 60%;
+    margin: auto;
+    margin-top: 128px;
+    margin-right: 16px;
+    text-align: center;
+    font-size: 1.5vw;
+  }
+  .covers p {
+    margin: 16px 0 16px 0;
+  }
+  h2 {
+    margin-top: 32px;
+  }
+  .learn-more-button-b {
+    margin-right: auto;
+    border-radius: 32px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .learn-more-button-b a {
+    font-size: 2vw;
+  }
 
-      /*Tickets section CSS design */
-      section.third-article {
-        background-image: linear-gradient(#e4e4e4, #e4e4e4);
-      }
+  /*Tickets section CSS design */
+  section.third-article {
+    background-image: linear-gradient(#e4e4e4, #e4e4e4);
+  }
 
-      /*Footer section CSS design */
+  /*Footer section CSS design */
 
-      footer {
-        background-size: 100%;
-      }
-      ul.ft-li {
-        display: none;
-      }
-      div.social-icons-ft {
-        display: block;
-      }
-      .social-icons-ft span {
-        font-size: 60px;
-        padding-left: 32px;
-        padding-right: 32px;
-      }
-      .social-icons-ft a {
-        color: #e4e4e4;
-      }
-      .social-icons-ft a:hover {
-        color: red;
-        transition: linear 0.2s;
-      }
-      .social-icons-ft {
-        margin: 64px 0 32px 0;
-      }
-      form.feedback-message {
-        display: flex;
-        justify-content: flex-start;
-        flex-direction: column;
-      }
-      .feedback-message {
-        width: 95%;
-        padding: 8px 16px 8px 16px;
-        margin: 8px;
-      }
-      h6 {
-        pointer-events: none;
-        border-style: none;
-      }
-      .ft-li a:hover {
-        color: #21182d;
-        cursor: default;
-      }
-      label {
-        text-align: left;
-        font-size: 20px;
-      }
-      #email,
-      #message {
-        background-color: #21182d;
-        color: #e4e4e4;
-        border-radius: 8px;
-        font-size: 20px;
-        width: 10%;
-        transition: width 0.4s ease-in-out;
-        outline: none;
-      }
-      #email:focus {
-        width: 100%;
-      }
-      #message {
-        width: 10%;
-        resize: none;
-      }
-      #message:focus {
-        width: 100%;
-      }
-      .submit {
-        width: 25%;
-        margin: auto;
-        margin-top: 8px;
-      }
-      .submit button {
-        font-family: "Lato", sans-serif;
-        font-weight: bold;
-        text-align: center;
-        background-color: #21182d;
-        color: #e4e4e4;
-        padding: 8px 16px 8px 16px;
-        border-radius: 8px;
-        border-style: none;
-      }
-      .submit button:hover {
-        color: red;
-        transition: linear 0.2s;
-      }
-    }
+  footer {
+    background-size: 100%;
+  }
+  ul.ft-li {
+    display: none;
+  }
+  div.social-icons-ft {
+    display: block;
+  }
+  .social-icons-ft span {
+    font-size: 60px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .social-icons-ft a {
+    color: #e4e4e4;
+  }
+  .social-icons-ft a:hover {
+    color: red;
+    transition: linear 0.2s;
+  }
+  .social-icons-ft {
+    margin: 64px 0 32px 0;
+  }
+  form.feedback-message {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  .feedback-message {
+    width: 95%;
+    padding: 8px 16px 8px 16px;
+    margin: 8px;
+  }
+  h6 {
+    pointer-events: none;
+    border-style: none;
+  }
+  .ft-li a:hover {
+    color: #21182d;
+    cursor: default;
+  }
+  label {
+    text-align: left;
+    font-size: 20px;
+  }
+  #email,
+  #message {
+    background-color: #21182d;
+    color: #e4e4e4;
+    border-radius: 8px;
+    font-size: 20px;
+    width: 10%;
+    transition: width 0.4s ease-in-out;
+    outline: none;
+  }
+  #email:focus {
+    width: 100%;
+  }
+  #message {
+    width: 10%;
+    resize: none;
+  }
+  #message:focus {
+    width: 100%;
+  }
+  .submit {
+    width: 25%;
+    margin: auto;
+    margin-top: 8px;
+  }
+  .submit button {
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    background-color: #21182d;
+    color: #e4e4e4;
+    padding: 8px 16px 8px 16px;
+    border-radius: 8px;
+    border-style: none;
+  }
+  .submit button:hover {
+    color: red;
+    transition: linear 0.2s;
+  }
+}

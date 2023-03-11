@@ -1,134 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Guitarzone</title>
-    <link rel="stylesheet" type="text/css" href="homepage.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" type="text/css" href="homepage.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav id="burger-icon-container">
+      <button id="close-btn" class="material-symbols-outlined">close</button>
+      <ul class="burger-icon-content">
+        <li class="burger-icon-list">
+          <a href=""> Login </a>
+        </li>
+        <li class="burger-icon-list">
+          <a href=""> Sign-up </a>
+        </li>
+        <li class="burger-icon-list">
+          <a href=""> Contact </a>
+        </li>
+      </ul>
+    </nav>
     <header>
-        <div class="flex-container-wide">
-            <nav class="user-surf">
-                <ul class="navbar">
-                    <li><a class="active" href="">Home</a></li>
-                    <li><a href="">Songs</a></li>
-                    <li><a href="">Covers</a></li>
-                    <li><a href="">Tickets</a></li>
-                    <li><a href="">Shop</a></li>
-                </ul>
-            </nav>
-            <img class="homepage-img" src="./Homepage-images/Guitarzone-logo.svg" alt="Guitarzone" title="Guitarzone">
-            <div class="burger-button"><a href="" class="material-symbols-outlined">menu</a></div>
-            <nav class="mobile-display-none">
-                <ul class="contact-menu"> 
-                    <li><a href=""><ion-icon name="logo-twitter"></ion-icon></a></li>
-                    <li><a href=""><ion-icon name="logo-facebook"></ion-icon></a></li>
-                    <li><a href=""><ion-icon name="logo-youtube"></ion-icon></a></li>
-                    <li><a href=""><ion-icon name="mail-outline"></ion-icon></a></li>
-                    <li><a href=""><ion-icon name="call-outline"></ion-icon></a></li>
-                    <li><a href="">Login</a></li>
-                    <li><a href="">Sign-up</a></li>
-                </ul>
-            </nav>
+      <div class="flex-container-wide">
+        <nav class="user-surf">
+          <ul class="navbar">
+            <li><a class="active" href="">Home</a></li>
+            <li><a href="">Songs</a></li>
+            <li><a href="">Covers</a></li>
+            <li><a href="">Tickets</a></li>
+            <li><a href="">Shop</a></li>
+          </ul>
+        </nav>
+        <img
+          class="homepage-img"
+          src="Homepage-images/Guitarzone-logo.svg"
+          alt="Guitarzone"
+          title="Guitarzone"
+        />
+        <div id="burger-btn" class="burger-button">
+          <a href="" class="material-symbols-outlined">menu</a>
         </div>
+        <nav class="mobile-display-none">
+          <ul class="contact-menu">
+            <li>
+              <a href=""><ion-icon name="logo-twitter"></ion-icon></a>
+            </li>
+            <li>
+              <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
+            </li>
+            <li>
+              <a href=""><ion-icon name="logo-youtube"></ion-icon></a>
+            </li>
+            <li>
+              <a href=""><ion-icon name="mail-outline"></ion-icon></a>
+            </li>
+            <li>
+              <a href=""><ion-icon name="call-outline"></ion-icon></a>
+            </li>
+            <li><a href="">Login</a></li>
+            <li><a href="">Sign-up</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <article class="songs-covers-row">
-        <header class="first-article">
-            <div class="container">
-                <img class="songs-img" src="/Homepage-images/Picture-for-Songs-article.jpg" alt="Songs">
-                <div class="songs">
-                    <h2>Songs</h2>
-                    <p>Here you can listen to my latest composition. You can also find tabs, lyrics and subscribe to get the latest news. You can leave a comment in the comment section below. Enjoy!</p>
-                    <div class="learn-more-button-a"><a href="">Learn more</a></div>
-                </div>
-            </div>   
-        </header>
-        <section class="second-article">
-            <div class="second-container">
-                <img class="covers-img" src="/Homepage-images/Picture-for-Covers-article.webp" alt="Covers">
-                <div class="covers">
-                    <h2>Covers</h2>
-                    <p>Here you can listen to songs that i liked and covered. You can listen to various music styles, different approaches and get guitar tabs for each song! Subscribe and leave a comment!</p>
-                    <div class="learn-more-button-b"><a href="">Learn more</a></div>
-            </div>
-            </div>
-        </section>
+      <header class="first-article">
+        <div class="container">
+          <img
+            class="songs-img"
+            src="Homepage-images/Picture-for-Songs-article.jpg"
+            alt="Songs"
+          />
+          <div class="songs">
+            <h2>Songs</h2>
+            <p>
+              Here you can listen to my latest songs. You can also find tabs,
+              lyrics and subscribe to get the latest news. You can leave a
+              comment in the comment section below. Enjoy!
+            </p>
+            <div class="learn-more-button-a"><a href="">Learn more</a></div>
+          </div>
+        </div>
+      </header>
+      <section class="second-article">
+        <div class="second-container">
+          <img
+            class="covers-img"
+            src="Homepage-images/Picture-for-Covers-article.webp"
+            alt="Covers"
+          />
+          <div class="covers">
+            <h2>Covers</h2>
+            <p>
+              Here you can listen to songs that i liked and covered. You can
+              listen to various music styles, different approaches and get
+              guitar tabs for each song! Subscribe and leave a comment!
+            </p>
+            <div class="learn-more-button-b"><a href="">Learn more</a></div>
+          </div>
+        </div>
+      </section>
     </article>
     <section class="third-article">
-        <div class="third-container">
-            <div class="tickets">
-                <h3>Tickets</h3>
-                <p>Get tickets for my upcoming concerts!</p>
-                <div class="ease-img">
-                    <img class="tickets-img" src="/Homepage-images/Picture-for-tickets-article.jpg" alt="Sorry,no upcoming concerts">
-                    <div class="ease-button">
-                        <div class="get-ticket-button"><a href="">Get ticket!</a></div>
-                    </div>
-                </div>
+      <div class="third-container">
+        <div class="tickets">
+          <h3>Tickets</h3>
+          <p>Get tickets for my upcoming concerts!</p>
+          <div class="ease-img">
+            <img
+              class="tickets-img"
+              src="Homepage-images/Picture-for-tickets-article.jpg"
+              alt="Sorry,no upcoming concerts"
+            />
+            <div class="ease-button">
+              <div class="get-ticket-button"><a href="">Get ticket!</a></div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
     <section class="fourth-article">
-        <div class="fourth-container">
-            <div class="shop">
-                <h4>Merchandise shop</h4>
-                <p class="see-prod"><a href="">See all the products!</a></p>
-                <div class="ease-shop-img">
-                    <img class="shop-img" src="/Homepage-images/Shop-image.jpg" alt="Shop">
-                    <div class="ease-add-button">
-                        <div class="add-cart-button"><a href="">Add to cart</a></div>
-                    </div>
-                </div>
+      <div class="fourth-container">
+        <div class="shop">
+          <h4>Merchandise shop</h4>
+          <p class="see-prod"><a href="">See all the products!</a></p>
+          <div class="ease-shop-img">
+            <img
+              class="shop-img"
+              src="Homepage-images/Shop-image.jpg"
+              alt="Shop"
+            />
+            <div class="ease-add-button">
+              <div class="add-cart-button"><a href="">Add to cart</a></div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
     <footer>
-        <div class="ft-container">
-            <div class="follow-section">
-                <h5>Follow us</h5>
-                <div class="social-icons-ft"> 
-                    <span><a href=""><ion-icon name="logo-twitter"></ion-icon></a></span>
-                    <span><a href=""><ion-icon name="logo-facebook"></ion-icon></a></span>
-                    <span><a href=""><ion-icon name="logo-youtube"></ion-icon></a></span>
-                    <br>
-                    <span><a href=""><ion-icon name="mail-outline"></ion-icon></a></span>
-                    <span><a href=""><ion-icon name="call-outline"></ion-icon></a></span>
-                </div>
-                    <ul class="ft-li">
-                        <li><a href="">Facebook</a></li>
-                        <li><a href="">Instagram</a></li>
-                        <li><a href="">TikTok</a></li>
-                        <li><a href="">Twitter</a></li>
-                    </ul>
-            </div>
-            <div class="feedback-section">
-                <h6 class="ft-li"><a href="">Send us feedback!</a></h6>
-                <p class="feedb">You can send us a message regarding our music and products!You can also subscribe to our newsletter.</p>
-                <form class="feedback-message">
-                    <label>E-mail:</label>
-                    <input type="text" id="email">
-                    <label>Message:</label>
-                    <textarea id="message"></textarea>
-                    <div class="submit"><button>Submit</button></div>
-                </form>
-            </div>
+      <div class="ft-container">
+        <div class="follow-section">
+          <h5>Follow us</h5>
+          <div class="social-icons-ft">
+            <span
+              ><a href=""><ion-icon name="logo-twitter"></ion-icon></a
+            ></span>
+            <span
+              ><a href=""><ion-icon name="logo-facebook"></ion-icon></a
+            ></span>
+            <span
+              ><a href=""><ion-icon name="logo-youtube"></ion-icon></a
+            ></span>
+            <br />
+            <span
+              ><a href=""><ion-icon name="mail-outline"></ion-icon></a
+            ></span>
+            <span
+              ><a href=""><ion-icon name="call-outline"></ion-icon></a
+            ></span>
+          </div>
+          <ul class="ft-li">
+            <li><a href="">Facebook</a></li>
+            <li><a href="">Instagram</a></li>
+            <li><a href="">TikTok</a></li>
+            <li><a href="">Twitter</a></li>
+          </ul>
         </div>
-        <div class="copyright">
-            <p class="cright">Copyright &#x0007C; &copy; 2022</p>
+        <div class="feedback-section">
+          <h6 class="ft-li"><a href="">Send us feedback!</a></h6>
+          <p class="feedb">
+            You can send us a message regarding our music and products!You can
+            also subscribe to our newsletter.
+          </p>
+          <form class="feedback-message">
+            <label>E-mail:</label>
+            <input type="text" id="email" />
+            <label>Message:</label>
+            <textarea id="message"></textarea>
+            <div class="submit"><button>Submit</button></div>
+          </form>
         </div>
+      </div>
+      <div class="copyright">
+        <p class="cright">Copyright &#x0007C; &copy; 2022</p>
+      </div>
     </footer>
 
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>  
-</body>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="index.js"></script>
+  </body>
 </html>
