@@ -28,20 +28,23 @@ nav#burger-icon-container {
   display: none;
 }
 ul.burger-icon-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 0;
+  height: 80%;
+}
+ul.burger-icon-content a {
   font-family: "Lato", sans-serif;
+  font-size: 1.7rem;
   font-weight: bold;
-  text-align: center;
   color: #b0b0b0;
   padding-inline-start: 0;
 }
-li.burger-icon-list {
-  padding: 10px;
-}
-li.burger-icon-list a {
-  color: #b0b0b0;
-}
-li.burger-icon-list a:hover {
-  color: #e4e4e4;
+
+ul.burger-icon-content a:hover {
+  color: red;
   transition: 0.4s;
 }
 
@@ -558,6 +561,7 @@ ul.ft-li {
     border-bottom-left-radius: 16px;
     transition: linear 0.2s;
   }
+
   .navbar li a {
     padding: 8px;
   }

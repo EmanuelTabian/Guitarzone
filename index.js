@@ -42,7 +42,6 @@ const stickyNavQuery = function () {
     !entry.isIntersecting
       ? navBar.classList.add("sticky-nav")
       : navBar.classList.remove("sticky-nav");
-    console.log(window.innerWidth);
     if (window.innerWidth < 800 && !entry.isIntersecting) {
       console.log(entry.isIntersecting);
       navBar.classList.remove("sticky-nav");
