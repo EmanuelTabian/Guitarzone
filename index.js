@@ -23,14 +23,6 @@ burgerIconContainer.addEventListener("transitionend", function () {
   }
 });
 
-window.addEventListener("resize", function () {
-  if (window.innerWidth >= 800) {
-    burgerIconContainer.style.display = "none";
-    burgerIconContainer.style.opacity = 0;
-    burgerBtn.style.opacity = 1;
-  }
-});
-
 // Scrolling sections into view
 const navBar = document.querySelector(".top-nav");
 const section1 = document.querySelector(".songs-covers-row");
@@ -63,4 +55,12 @@ const stickyNavQuery = function () {
   const containerObs = new IntersectionObserver(obsFn, obsOpt);
   containerObs.observe(stickyObs);
 };
-stickyNavQuery();
+
+window.addEventListener("resize", function () {
+  if (window.innerWidth >= 800) {
+    stickyNavQuery();
+    burgerIconContainer.style.display = "none";
+    burgerIconContainer.style.opacity = 0;
+    burgerBtn.style.opacity = 1;
+  } else navBar.classList.remove("sticky-nav");
+});
