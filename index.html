@@ -32,37 +32,39 @@
       <button id="close-btn" class="material-symbols-outlined">close</button>
       <ul class="burger-icon-content">
         <li class="burger-icon-list">
-          <a href=""> Login </a>
-        </li>
-        <li class="burger-icon-list">
-          <a href=""> Sign-up </a>
-        </li>
-        <li class="burger-icon-list">
-          <a href=""> Contact </a>
+          <li>
+            <a href=""><ion-icon name="logo-twitter"></ion-icon></a>
+          </li>
+          <li>
+            <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
+          </li>
+          <li>
+            <a href=""><ion-icon name="logo-youtube"></ion-icon></a>
+          </li>
+          <li>
+            <a href=""><ion-icon name="mail-outline"></ion-icon></a>
+          </li>
+          <li>
+            <a href=""><ion-icon name="call-outline"></ion-icon></a>
+          </li>
         </li>
       </ul>
     </nav>
-    <header>
-      <div class="flex-container-wide">
+    <header  id="art--1">
+      <div class="top-nav">
         <nav class="user-surf">
           <ul class="navbar">
-            <li><a class="active" href="">Home</a></li>
-            <li><a href="">Songs</a></li>
-            <li><a href="">Covers</a></li>
-            <li><a href="">Tickets</a></li>
-            <li><a href="">Shop</a></li>
+            <li><a class="nav home-nav " href="#art--1">Home</a></li>
+            <li><a class="nav songs-nav" href="#art--2">Songs</a></li>
+            <li><a class="nav covers-nav" href="#art--3">Covers</a></li>
+            <li><a class="nav tickets-nav" href="#art--4">Tickets</a></li>
+            <li><a class="nav shop-nav" href="#art--5">Shop</a></li>
           </ul>
+          <div id="burger-btn" class="burger-button">
+            <a href="" class="material-symbols-outlined hidden">menu</a>
+          </div>
         </nav>
-        <img
-          class="homepage-img"
-          src="Homepage-images/Guitarzone-logo.svg"
-          alt="Guitarzone"
-          title="Guitarzone"
-        />
-        <div id="burger-btn" class="burger-button">
-          <a href="" class="material-symbols-outlined">menu</a>
-        </div>
-        <nav class="mobile-display-none">
+        <header class="mobile-display-none">
           <ul class="contact-menu">
             <li>
               <a href=""><ion-icon name="logo-twitter"></ion-icon></a>
@@ -79,14 +81,20 @@
             <li>
               <a href=""><ion-icon name="call-outline"></ion-icon></a>
             </li>
-            <li><a href="">Login</a></li>
-            <li><a href="">Sign-up</a></li>
           </ul>
-        </nav>
+        </header>
       </div>
     </header>
-    <article class="songs-covers-row">
-      <header class="first-article">
+    <div class="logo-container">
+    <img
+      class="homepage-img"
+      src="Homepage-images/Guitarzone-logo.svg"
+      alt="Guitarzone"
+      title="Guitarzone"
+    />
+  </div>
+    <section class="songs-covers-row">
+      <article class="first-article" id="art--2">
         <div class="container">
           <img
             class="songs-img"
@@ -103,12 +111,12 @@
             <div class="learn-more-button-a"><a href="">Learn more</a></div>
           </div>
         </div>
-      </header>
-      <section class="second-article">
+      </article>
+      <article class="second-article" id="art--3">
         <div class="second-container">
           <img
             class="covers-img"
-            src="Homepage-images/Picture-for-Covers-article.webp"
+            src="Homepage-images/Picture-for-Covers-article.jpg"
             alt="Covers"
           />
           <div class="covers">
@@ -121,10 +129,10 @@
             <div class="learn-more-button-b"><a href="">Learn more</a></div>
           </div>
         </div>
-      </section>
-    </article>
-    <section class="third-article">
-      <div class="third-container">
+      </article>
+    </section>
+    <section class="third-article" id="art--4">
+      <div class="third-container" >
         <div class="tickets">
           <h3>Tickets</h3>
           <p>Get tickets for my upcoming concerts!</p>
@@ -141,8 +149,8 @@
         </div>
       </div>
     </section>
-    <section class="fourth-article">
-      <div class="fourth-container">
+    <section class="fourth-article" id="art--5">
+      <div class="fourth-container" >
         <div class="shop">
           <h4>Merchandise shop</h4>
           <p class="see-prod"><a href="">See all the products!</a></p>

@@ -2,15 +2,18 @@
 body {
   max-width: 800px;
   margin: 0;
+  font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smootthing: grayscale;
 }
 :root {
   --purple-gradient: linear-gradient(#21182d, #4c3767);
   --purple-gradient-top: linear-gradient(to top, #21182d, #4c3767);
+  --nav-bar-gradient: linear-gradient(to left, #000000, #21182d, #082948);
   --white: #e4e4e4;
   --gray: #d0d0d0;
   --gray-gradient: linear-gradient(#b0b0b0, #e4e4e4);
+  --article-gradient: linear-gradient(#645981, #082948);
 }
 
 /* Burger icon blanket design */
@@ -41,6 +44,7 @@ li.burger-icon-list a:hover {
   color: #e4e4e4;
   transition: 0.4s;
 }
+
 button.material-symbols-outlined {
   position: absolute;
   right: 8px;
@@ -55,25 +59,23 @@ button.material-symbols-outlined:hover {
 }
 
 /* Navbar CSS design */
-header {
+body {
   background-image: url("Homepage-images/Navbar-background.jpg");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: 800px;
-  font-family: "Lato", sans-serif;
+  background-attachment: fixed;
+  background-size: 100%;
 }
+
 img.homepage-img {
-  width: 150px;
-}
-.flex-container-wide {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
+  width: 165px;
+  position: absolute;
+  top: 0;
+  left: 35vw;
 }
 ul.navbar {
   padding-inline-start: 0;
 }
-ul li a.active {
+.active {
   background-image: var(--purple-gradient-top);
   border-radius: 8px;
   border-top-left-radius: 0px;
@@ -88,18 +90,24 @@ ul li a.active {
   text-shadow: 1px 4px 8px rgba(0, 0, 0, 0.3);
   transition: linear 0.2s;
 }
-.navbar a::after {
-  font-family: "Material Icons";
-  content: "\e5cb";
-  font-size: 16px;
-  position: absolute;
-  left: 75px;
-}
+
 li {
   list-style: none;
 }
+.user-surf {
+  display: flex;
+  justify-content: space-between;
+}
 .user-surf a:hover {
   color: red;
+}
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  opacity: 1;
 }
 .burger-button a:hover {
   color: red;
@@ -126,9 +134,10 @@ a {
 .mobile-display-none {
   display: none;
 }
+
 /*Songs section CSS design */
 
-header.first-article {
+article.first-article {
   background-image: var(--gray-gradient);
 }
 .container {
@@ -141,7 +150,6 @@ header.first-article {
   width: 50%;
   margin: 32px 32px 32px 8px;
   text-align: left;
-  font-family: "Poppins", sans-serif;
   font-size: 2.4vw;
   text-shadow: 1px 4px 8px rgba(0, 0, 0, 0.3);
 }
@@ -187,7 +195,7 @@ header.first-article {
 }
 
 /*Covers section CSS design */
-section.second-article {
+article.second-article {
   background-image: var(--purple-gradient-top);
 }
 .second-container {
@@ -208,7 +216,6 @@ section.second-article {
   width: 50%;
   margin: 32px 8px 32px 32px;
   text-align: left;
-  font-family: "Poppins", sans-serif;
   font-size: 2.4vw;
   text-shadow: 1px 4px 8px rgba(0, 0, 0, 0.3);
 }
@@ -216,7 +223,7 @@ section.second-article {
   margin: 8px 0 8px 0;
 }
 h2 {
-  font-size: 25px;
+  font-size: 1.5em;
   margin: auto;
   text-align: left;
 }
@@ -261,15 +268,15 @@ section.third-article {
 }
 .tickets {
   width: 75%;
-  margin: 32px 64px 32px 64px;
+
   text-align: center;
-  font-family: "Poppins", sans-serif;
   font-size: 2.4vw;
   text-shadow: 1px 4px 8px rgba(0, 0, 0, 0.3);
 }
 h3 {
-  font-size: 25px;
+  font-size: 1.5em;
   margin: auto;
+  margin-top: 6px;
 }
 .tickets-img {
   width: 100%;
@@ -281,6 +288,7 @@ h3 {
   width: 100%;
   box-sizing: border-box;
   margin: auto;
+  margin-bottom: 12px;
   text-align: center;
   background-image: var(--purple-gradient);
   padding: 8px 16px 8px 16px;
@@ -318,15 +326,14 @@ section.fourth-article {
 }
 .shop {
   width: 75%;
-  margin: 32px 64px 32px 64px;
   text-align: center;
-  font-family: "Poppins", sans-serif;
   font-size: 2.4vw;
   text-shadow: 1px 4px 8px rgba(0, 0, 0, 0.3);
 }
 h4 {
-  font-size: 25px;
+  font-size: 1.5em;
   margin: auto;
+  margin-top: 6px;
   color: var(--white);
 }
 .shop-img {
@@ -339,6 +346,7 @@ h4 {
   width: 100%;
   box-sizing: border-box;
   margin: auto;
+  margin-bottom: 12px;
   text-align: center;
   background-image: var(--gray-gradient);
   padding: 8px 16px 8px 16px;
@@ -394,11 +402,10 @@ footer {
 }
 .ft-container {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
   flex-direction: row;
 }
 .follow-section {
-  font-family: "Lato", sans-serif;
   text-align: center;
   text-shadow: 1px 4px 8px rgba(0, 0, 0, 0.3);
   margin: 16px 8px 16px 32px;
@@ -410,7 +417,7 @@ footer {
   width: 40%;
 }
 h5 {
-  font-size: 25px;
+  font-size: 2.5em;
   font-weight: bold;
   margin: 16px 32px 0;
 }
@@ -438,7 +445,6 @@ form.feedback-message {
   display: none;
 }
 .feedback-section {
-  font-family: "Lato", sans-serif;
   text-align: center;
   font-weight: bold;
   margin: 16px 32px 16px 8px;
@@ -454,13 +460,14 @@ h6.ft-li a {
   color: #21182d;
 }
 h6 {
-  font-size: 25px;
+  font-size: 2.5em;
   margin: 16px 32px 0;
   border-bottom: 2px #4c3767 solid;
 }
 p.feedb {
-  margin: 16px 16px 16px 16px;
-  line-height: 25px;
+  margin: 8px;
+  line-height: 30px;
+  font-size: 2.5em;
 }
 div.social-icons-ft {
   display: none;
@@ -476,10 +483,19 @@ div.copyright {
 .cright {
   margin: 0;
   text-align: center;
-  font-family: "Lato", sans-serif;
+
   font-size: 12px;
   color: #e4e4e4;
   text-shadow: 1px 4px 8px rgba(0, 0, 0, 0.3);
+}
+.feedback-section,
+.follow-section {
+  font-size: 0.5em;
+  width: 40%;
+}
+ul.ft-li {
+  line-height: 50px;
+  font-size: 2em;
 }
 
 /* This is for tablets. Width from 768px to 992px */
@@ -489,22 +505,31 @@ div.copyright {
   }
   /* Navbar CSS design */
 
-  header {
-    background-size: 1000px;
+  .top-nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background: var(--nav-bar-gradient);
+    height: 3em;
+  }
+  .logo-container {
+    height: 40vw;
+  }
+  ul.navbar,
+  .mobile-display-none,
+  .contact-menu {
+    display: flex;
   }
   img.homepage-img {
-    width: 175px;
+    width: 40vw;
+    top: 6vw;
+    left: 30vw;
   }
   #burger-btn {
     display: none;
   }
 
-  ul.navbar,
-  .contact-menu,
-  .mobile-display-none {
-    display: flex;
-  }
-  .flex-container-wide {
+  .top-nav {
     display: flex;
     justify-content: space-between;
   }
@@ -519,6 +544,7 @@ div.copyright {
   .contact-menu li a {
     color: #d0d0d0;
     font-weight: bold;
+    margin-right: 2vw;
     padding: 8px;
     background-image: linear-gradient(
       to top,
@@ -634,7 +660,7 @@ div.copyright {
   /*Footer section CSS design */
 
   footer {
-    background-size: 1000px;
+    background-size: 100vw;
   }
 }
 
@@ -648,10 +674,13 @@ div.copyright {
 
   header,
   footer {
-    background-size: 1200px;
+    background-size: 100vw;
   }
+
   img.homepage-img {
-    width: 250px;
+    width: 40vw;
+    top: 5vw;
+    left: 30vw;
   }
 
   /* Tickets section CSS design */
@@ -719,23 +748,23 @@ div.copyright {
     max-width: none;
     background-image: url(./Homepage-images/Navbar-background.jpg);
     background-attachment: fixed;
-    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
   }
-  header {
-    background-image: none;
-  }
+
   img.homepage-img {
-    width: 450px;
+    width: 35vw;
+    top: 8vw;
+    left: 31vw;
+  }
+  .top-nav {
+    height: 4.2em;
   }
   .navbar li a,
   .contact-menu li a {
-    font-size: 1.35vw;
+    font-size: 1.8em;
   }
-  ul.navbar,
-  .mobile-display-none,
-  .contact-menu {
-    display: flex;
-  }
+
   .contact-menu li a {
     padding: 8px 8px 8px 16px;
   }
@@ -745,14 +774,14 @@ div.copyright {
 
   /*Songs section CSS design */
 
-  header.first-article,
-  section.second-article {
+  article.first-article,
+  article.second-article {
     width: 100%;
   }
-  header.first-article {
+  article.first-article {
     border-top-right-radius: 1000px;
   }
-  section.second-article {
+  article.second-article {
     border-top-left-radius: 1000px;
   }
   .container {
@@ -760,8 +789,9 @@ div.copyright {
     justify-content: space-between;
     flex-direction: column-reverse;
   }
-  article.songs-covers-row {
+  section.songs-covers-row {
     display: flex;
+    background: var(--article-gradient);
   }
   .songs {
     width: 60%;
@@ -803,7 +833,7 @@ div.copyright {
 
   /*Covers section CSS design */
 
-  section.second-article {
+  article.second-article {
     background-color: #21182d;
   }
   .second-container {
@@ -836,9 +866,7 @@ div.copyright {
   .covers p {
     margin: 16px 0 16px 0;
   }
-  h2 {
-    margin-top: 32px;
-  }
+
   .learn-more-button-b {
     margin-right: auto;
     border-radius: 32px;
@@ -900,14 +928,14 @@ div.copyright {
   }
   label {
     text-align: left;
-    font-size: 20px;
+    font-size: 2.3em;
   }
   #email,
   #message {
     background-color: #21182d;
     color: #e4e4e4;
     border-radius: 8px;
-    font-size: 20px;
+    font-size: 2.5em;
     width: 10%;
     transition: width 0.4s ease-in-out;
     outline: none;
@@ -928,8 +956,8 @@ div.copyright {
     margin-top: 8px;
   }
   .submit button {
-    font-family: "Lato", sans-serif;
     font-weight: bold;
+    font-size: 2.5em;
     text-align: center;
     background-color: #21182d;
     color: #e4e4e4;
