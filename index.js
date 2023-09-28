@@ -33,17 +33,21 @@ navBar.addEventListener("click", function (e) {
   document.querySelector(id).scrollIntoView({ behavior: "smooth" });
 });
 
-const mediaQueryList = window.matchMedia("(min-width: 800px)");
 const stickyNavQuery = function () {
-  if (!mediaQueryList.matches) return;
   const navHeight = navBar.getBoundingClientRect().height;
   const stickyObs = document.querySelector(".logo-container");
 
-  const obsFn = function (entries) {
+  const obsFn = function (entries, observer) {
     const [entry] = entries;
     !entry.isIntersecting
       ? navBar.classList.add("sticky-nav")
       : navBar.classList.remove("sticky-nav");
+    console.log(window.innerWidth);
+    if (window.innerWidth < 800 && !entry.isIntersecting) {
+      console.log(entry.isIntersecting);
+      navBar.classList.remove("sticky-nav");
+      observer.unobserve(entry.target);
+    }
   };
 
   const obsOpt = {
@@ -55,12 +59,11 @@ const stickyNavQuery = function () {
   const containerObs = new IntersectionObserver(obsFn, obsOpt);
   containerObs.observe(stickyObs);
 };
-
+stickyNavQuery();
 window.addEventListener("resize", function () {
-  if (window.innerWidth >= 800) {
-    stickyNavQuery();
-    burgerIconContainer.style.display = "none";
-    burgerIconContainer.style.opacity = 0;
-    burgerBtn.style.opacity = 1;
-  } else navBar.classList.remove("sticky-nav");
+  stickyNavQuery();
+  navBar.classList.remove("sticky-nav");
+  burgerIconContainer.style.display = "none";
+  burgerIconContainer.style.opacity = 0;
+  burgerBtn.style.opacity = 1;
 });

@@ -508,6 +508,7 @@ ul.ft-li {
   .top-nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-direction: row;
     background: var(--nav-bar-gradient);
     height: 3em;
