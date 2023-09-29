@@ -9,7 +9,7 @@ body {
 :root {
   --purple-gradient: linear-gradient(#21182d, #4c3767);
   --purple-gradient-top: linear-gradient(to top, #21182d, #4c3767);
-  --nav-bar-gradient: linear-gradient(to left, #000000, #21182d, #082948);
+  --nav-bar-gradient: linear-gradient(to bottom, #000e19, #00314a);
   --white: #e4e4e4;
   --gray: #d0d0d0;
   --gray-gradient: linear-gradient(#b0b0b0, #e4e4e4);
@@ -44,7 +44,7 @@ ul.burger-icon-content a {
 }
 
 ul.burger-icon-content a:hover {
-  color: red;
+  color: #b34a00;
   transition: 0.4s;
 }
 
@@ -63,7 +63,7 @@ button.material-symbols-outlined:hover {
 
 /* Navbar CSS design */
 body {
-  background-image: url("Homepage-images/Navbar-background.jpg");
+  background-image: url("Homepage-images/header-image-2.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100%;
@@ -102,7 +102,7 @@ li {
   justify-content: space-between;
 }
 .user-surf a:hover {
-  color: red;
+  color: #b34a00;
 }
 .sticky-nav {
   position: fixed;
@@ -113,12 +113,12 @@ li {
   opacity: 1;
 }
 .burger-button a:hover {
-  color: red;
+  color: #b34a00;
   transition: linear 0.2s;
 }
 .user-surf a:active,
 .burger-button a:active {
-  color: red;
+  color: #b34a00;
 }
 a {
   text-decoration: none;
@@ -190,11 +190,11 @@ article.first-article {
   top: 2.5px;
 }
 .learn-more-button-a a:hover {
-  color: red;
+  color: #b34a00;
   transition: linear 0.2s;
 }
 .learn-more-button-a a:active {
-  color: red;
+  color: #b34a00;
 }
 
 /*Covers section CSS design */
@@ -254,11 +254,11 @@ h2 {
   top: 2.5px;
 }
 .learn-more-button-b a:hover {
-  color: red;
+  color: #b34a00;
   transition: linear 0.2s;
 }
 .learn-more-button-b a:active {
-  color: red;
+  color: #b34a00;
 }
 /*Tickets section CSS design */
 
@@ -311,11 +311,11 @@ h3 {
   top: 2.5px;
 }
 .get-ticket-button a:hover {
-  color: red;
+  color: #b34a00;
   transition: linear 0.2s;
 }
 .get-ticket-button a:active {
-  color: red;
+  color: #b34a00;
 }
 
 /*Shop section CSS design */
@@ -369,21 +369,21 @@ h4 {
   top: 2.5px;
 }
 .add-cart-button a:hover {
-  color: red;
+  color: #b34a00;
   transition: linear 0.2s;
 }
 .add-cart-button a:active {
-  color: red;
+  color: #b34a00;
 }
 .see-prod a {
   color: var(--white);
 }
 .see-prod a:hover {
-  color: red;
+  color: #b34a00;
   transition: linear 0.2s;
 }
 .see-prod a:active {
-  color: red;
+  color: #b34a00;
 }
 .see-prod a::after {
   font-family: "Material Icons";
@@ -397,7 +397,7 @@ h4 {
 
 footer {
   width: auto;
-  background-image: url(./Homepage-images/Navbar-background.jpg);
+  background-image: url(./Homepage-images/header-image-2.jpg);
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: 800px;
@@ -438,11 +438,11 @@ ul.ft-li a {
   border-bottom: 1.9px var(--white) solid;
 }
 .ft-li a:hover {
-  color: red;
+  color: #b34a00;
   transition: linear 0.2s;
 }
 .ft-li a:active {
-  color: red;
+  color: #b34a00;
 }
 form.feedback-message {
   display: none;
@@ -569,7 +569,7 @@ ul.ft-li {
     display: none;
   }
   .contact-menu li a:hover {
-    color: red;
+    color: #b34a00;
     background-image: linear-gradient(
       to top,
       #21182d,
@@ -578,10 +578,10 @@ ul.ft-li {
     );
   }
   .contact-menu li a:active {
-    color: red;
+    color: #b34a00;
   }
   ul li a.active:hover {
-    color: red;
+    color: #b34a00;
     background-image: linear-gradient(to top, #21182d, #4c3767);
   }
   .navbar li a {
@@ -596,7 +596,7 @@ ul.ft-li {
     border-bottom-left-radius: 16px;
   }
   .user-surf a:hover {
-    color: red;
+    color: #b34a00;
     background-image: linear-gradient(
       to top,
       #21182d,
@@ -751,7 +751,6 @@ ul.ft-li {
 @media (min-width: 1200px) {
   body {
     max-width: none;
-    background-image: url(./Homepage-images/Navbar-background.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -907,7 +906,7 @@ ul.ft-li {
     color: #e4e4e4;
   }
   .social-icons-ft a:hover {
-    color: red;
+    color: #b34a00;
     transition: linear 0.2s;
   }
   .social-icons-ft {
@@ -971,7 +970,7 @@ ul.ft-li {
     border-style: none;
   }
   .submit button:hover {
-    color: red;
+    color: #b34a00;
     transition: linear 0.2s;
   }
 }
