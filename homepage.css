@@ -7,13 +7,12 @@ body {
   -moz-osx-font-smootthing: grayscale;
 }
 :root {
-  --purple-gradient: linear-gradient(#21182d, #4c3767);
-  --purple-gradient-top: linear-gradient(to top, #21182d, #4c3767);
+  --blue-gradient: linear-gradient(#000e19, #00314a);
+  --blue-gradient-top: linear-gradient(to top, #000e19, #00314a);
   --nav-bar-gradient: linear-gradient(to bottom, #000e19, #00314a);
   --white: #e4e4e4;
   --gray: #d0d0d0;
   --gray-gradient: linear-gradient(#b0b0b0, #e4e4e4);
-  --article-gradient: linear-gradient(#645981, #082948);
 }
 
 /* Burger icon blanket design */
@@ -21,7 +20,7 @@ nav#burger-icon-container {
   position: absolute;
   width: 100%;
   height: 156.99px;
-  background-color: rgb(33, 24, 45, 0.9);
+  background-color: rgb(8, 41, 72, 0.9);
   z-index: 1;
   opacity: 0;
   transition: opacity 0.5s ease;
@@ -44,7 +43,7 @@ ul.burger-icon-content a {
 }
 
 ul.burger-icon-content a:hover {
-  color: #b34a00;
+  color: #9f5c27;
   transition: 0.4s;
 }
 
@@ -79,7 +78,7 @@ ul.navbar {
   padding-inline-start: 0;
 }
 .active {
-  background-image: var(--purple-gradient-top);
+  background-image: var(--blue-gradient-top);
   border-radius: 8px;
   border-top-left-radius: 0px;
   border-bottom-left-radius: 16px;
@@ -102,7 +101,7 @@ li {
   justify-content: space-between;
 }
 .user-surf a:hover {
-  color: #b34a00;
+  color: #9f5c27;
 }
 .sticky-nav {
   position: fixed;
@@ -113,12 +112,12 @@ li {
   opacity: 1;
 }
 .burger-button a:hover {
-  color: #b34a00;
+  color: #9f5c27;
   transition: linear 0.2s;
 }
 .user-surf a:active,
 .burger-button a:active {
-  color: #b34a00;
+  color: #9f5c27;
 }
 a {
   text-decoration: none;
@@ -170,7 +169,7 @@ article.first-article {
 .learn-more-button-a {
   margin-right: auto;
   text-align: center;
-  background-image: var(--purple-gradient);
+  background-image: var(--blue-gradient);
   padding: 8px 16px 8px 16px;
   border-radius: 8px;
   border-top-left-radius: 0px;
@@ -190,16 +189,16 @@ article.first-article {
   top: 2.5px;
 }
 .learn-more-button-a a:hover {
-  color: #b34a00;
+  color: #9f5c27;
   transition: linear 0.2s;
 }
 .learn-more-button-a a:active {
-  color: #b34a00;
+  color: #9f5c27;
 }
 
 /*Covers section CSS design */
 article.second-article {
-  background-image: var(--purple-gradient-top);
+  background-image: var(--blue-gradient-top);
 }
 .second-container {
   display: flex;
@@ -254,11 +253,11 @@ h2 {
   top: 2.5px;
 }
 .learn-more-button-b a:hover {
-  color: #b34a00;
+  color: #9f5c27;
   transition: linear 0.2s;
 }
 .learn-more-button-b a:active {
-  color: #b34a00;
+  color: #9f5c27;
 }
 /*Tickets section CSS design */
 
@@ -293,7 +292,7 @@ h3 {
   margin: auto;
   margin-bottom: 12px;
   text-align: center;
-  background-image: var(--purple-gradient);
+  background-image: var(--blue-gradient);
   padding: 8px 16px 8px 16px;
   border-radius: 8px;
   text-shadow: 1px 4px 8px rgba(0, 0, 0, 0.3);
@@ -311,17 +310,17 @@ h3 {
   top: 2.5px;
 }
 .get-ticket-button a:hover {
-  color: #b34a00;
+  color: #9f5c27;
   transition: linear 0.2s;
 }
 .get-ticket-button a:active {
-  color: #b34a00;
+  color: #9f5c27;
 }
 
 /*Shop section CSS design */
 
 section.fourth-article {
-  background-image: var(--purple-gradient);
+  background-image: var(--blue-gradient);
 }
 .fourth-container {
   display: flex;
@@ -369,21 +368,21 @@ h4 {
   top: 2.5px;
 }
 .add-cart-button a:hover {
-  color: #b34a00;
+  color: #9f5c27;
   transition: linear 0.2s;
 }
 .add-cart-button a:active {
-  color: #b34a00;
+  color: #9f5c27;
 }
 .see-prod a {
   color: var(--white);
 }
 .see-prod a:hover {
-  color: #b34a00;
+  color: #9f5c27;
   transition: linear 0.2s;
 }
 .see-prod a:active {
-  color: #b34a00;
+  color: #9f5c27;
 }
 .see-prod a::after {
   font-family: "Material Icons";
@@ -412,7 +411,7 @@ footer {
   text-align: center;
   text-shadow: 1px 4px 8px rgba(0, 0, 0, 0.3);
   margin: 16px 8px 16px 32px;
-  background-image: var(--purple-gradient);
+  background-image: var(--blue-gradient);
   color: var(--white);
   border-radius: 32px;
   border-top-left-radius: 0px;
@@ -438,11 +437,11 @@ ul.ft-li a {
   border-bottom: 1.9px var(--white) solid;
 }
 .ft-li a:hover {
-  color: #b34a00;
+  color: #9f5c27;
   transition: linear 0.2s;
 }
 .ft-li a:active {
-  color: #b34a00;
+  color: #9f5c27;
 }
 form.feedback-message {
   display: none;
@@ -465,7 +464,7 @@ h6.ft-li a {
 h6 {
   font-size: 2.5em;
   margin: 16px 32px 0;
-  border-bottom: 2px #4c3767 solid;
+  border-bottom: 2px black solid;
 }
 p.feedb {
   margin: 8px;
@@ -480,7 +479,7 @@ div.social-icons-ft {
 
 div.copyright {
   width: 100%;
-  background-image: var(--purple-gradient);
+  background-image: var(--blue-gradient);
   padding: 8px 0 8px 0;
 }
 .cright {
@@ -550,12 +549,7 @@ ul.ft-li {
     font-weight: bold;
     margin-right: 2vw;
     padding: 8px;
-    background-image: linear-gradient(
-      to top,
-      #21182d 3%,
-      #4c3767 7%,
-      transparent 20%
-    );
+    background-image: linear-gradient(to top, #9f5c27, transparent 20%);
     border-radius: 8px;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 16px;
@@ -569,40 +563,24 @@ ul.ft-li {
     display: none;
   }
   .contact-menu li a:hover {
-    color: #b34a00;
-    background-image: linear-gradient(
-      to top,
-      #21182d,
-      #4c3767,
-      transparent 30%
-    );
+    color: #9f5c27;
+    background-image: linear-gradient(to top, #9f5c27, transparent 35%);
   }
   .contact-menu li a:active {
-    color: #b34a00;
+    color: #9f5c27;
   }
   ul li a.active:hover {
-    color: #b34a00;
-    background-image: linear-gradient(to top, #21182d, #4c3767);
+    color: #9f5c27;
   }
   .navbar li a {
-    background-image: linear-gradient(
-      to top,
-      #21182d 3%,
-      #4c3767 7%,
-      transparent 20%
-    );
+    background-image: linear-gradient(to top, #9f5c27, transparent 20%);
     border-radius: 8px;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 16px;
   }
   .user-surf a:hover {
-    color: #b34a00;
-    background-image: linear-gradient(
-      to top,
-      #21182d,
-      #4c3767,
-      transparent 30%
-    );
+    color: #9f5c27;
+    background-image: linear-gradient(to top, #9f5c27, transparent 35%);
   }
 
   /*Songs section CSS design */
@@ -795,7 +773,7 @@ ul.ft-li {
   }
   section.songs-covers-row {
     display: flex;
-    background: var(--article-gradient);
+    background: var(--blue-gradient);
   }
   .songs {
     width: 60%;
@@ -813,6 +791,7 @@ ul.ft-li {
   }
   .songs-img {
     width: 60%;
+    height: 16vw;
     margin: auto;
     margin-left: 16px;
     margin-bottom: 32px;
@@ -847,6 +826,7 @@ ul.ft-li {
   }
   .covers-img {
     width: 60%;
+    height: 16vw;
     margin: auto;
     margin-right: 16px;
     margin-bottom: 32px;
@@ -906,7 +886,7 @@ ul.ft-li {
     color: #e4e4e4;
   }
   .social-icons-ft a:hover {
-    color: #b34a00;
+    color: #9f5c27;
     transition: linear 0.2s;
   }
   .social-icons-ft {
@@ -927,7 +907,7 @@ ul.ft-li {
     border-style: none;
   }
   .ft-li a:hover {
-    color: #21182d;
+    color: #000e19;
     cursor: default;
   }
   label {
@@ -936,7 +916,7 @@ ul.ft-li {
   }
   #email,
   #message {
-    background-color: #21182d;
+    background-color: #000e19;
     color: #e4e4e4;
     border-radius: 8px;
     font-size: 2.5em;
@@ -963,14 +943,14 @@ ul.ft-li {
     font-weight: bold;
     font-size: 2.5em;
     text-align: center;
-    background-color: #21182d;
+    background-color: #000e19;
     color: #e4e4e4;
     padding: 8px 16px 8px 16px;
     border-radius: 8px;
     border-style: none;
   }
   .submit button:hover {
-    color: #b34a00;
+    color: #9f5c27;
     transition: linear 0.2s;
   }
 }
