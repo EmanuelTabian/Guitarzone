@@ -70,6 +70,7 @@ body {
 
 img.homepage-img {
   width: 165px;
+  object-fit: cover;
   position: absolute;
   top: 0;
   left: 35vw;
@@ -159,6 +160,7 @@ article.first-article {
   margin: 8px 0 8px 0;
 }
 .songs-img {
+  object-fit: cover;
   width: 50%;
   margin: 32px 8px 32px 32px;
   border-radius: 16px;
@@ -207,6 +209,7 @@ article.second-article {
 }
 .covers-img {
   width: 50%;
+  object-fit: cover;
   margin: 32px 32px 32px 8px;
   border-radius: 16px;
   border-top-right-radius: 0px;
@@ -282,6 +285,7 @@ h3 {
 }
 .tickets-img {
   width: 100%;
+  object-fit: cover;
   margin: auto;
   border-radius: 16px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -340,6 +344,7 @@ h4 {
 }
 .shop-img {
   width: 100%;
+  object-fit: cover;
   margin: auto;
   border-radius: 16px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -524,6 +529,7 @@ ul.ft-li {
     display: flex;
   }
   img.homepage-img {
+    object-fit: cover;
     width: 40vw;
     top: 6vw;
     left: 30vw;
@@ -591,6 +597,7 @@ ul.ft-li {
   }
   .songs-img {
     width: 35%;
+    object-fit: cover;
     border-radius: 32px;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 64px;
@@ -608,6 +615,7 @@ ul.ft-li {
 
   .covers-img {
     width: 35%;
+    object-fit: cover;
     border-radius: 32px;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 64px;
@@ -669,6 +677,7 @@ ul.ft-li {
   /* Tickets section CSS design */
   .tickets-img {
     margin: auto;
+    object-fit: cover;
     border-radius: 32px;
     opacity: 0.7;
     transition: 0.5s ease;
