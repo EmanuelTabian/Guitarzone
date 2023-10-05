@@ -67,7 +67,9 @@ body {
   background-attachment: fixed;
   background-size: 100%;
 }
-
+.lazy--img {
+  filter: blur(10px);
+}
 img.homepage-img {
   width: 165px;
   object-fit: cover;
