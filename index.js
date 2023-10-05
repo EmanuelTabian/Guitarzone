@@ -1,6 +1,7 @@
 const burgerBtn = document.getElementById("burger-btn");
 const closeBtn = document.getElementById("close-btn");
 const burgerIconContainer = document.getElementById("burger-icon-container");
+const bluryImgs = document.querySelectorAll("img[data-src]");
 
 burgerBtn.addEventListener("click", function (event) {
   event.preventDefault();
@@ -43,7 +44,6 @@ const stickyNavQuery = function () {
       ? navBar.classList.add("sticky-nav")
       : navBar.classList.remove("sticky-nav");
     if (window.innerWidth < 800 && !entry.isIntersecting) {
-      console.log(entry.isIntersecting);
       navBar.classList.remove("sticky-nav");
       observer.unobserve(entry.target);
     }
@@ -66,3 +66,25 @@ window.addEventListener("resize", function () {
   burgerIconContainer.style.opacity = 0;
   burgerBtn.style.opacity = 1;
 });
+
+// Lazy-img load
+
+const loadImg = function (entries, observer) {
+  const [entry] = entries;
+  if (!entry.isIntersecting) return;
+  entry.target.src = entry.target.dataset.src;
+  console.log(entry.target);
+  entry.target.addEventListener("load", function () {
+    entry.target.classList.remove("lazy--img");
+  });
+
+  observer.unobserve(entry.target);
+};
+
+const imgObserver = new IntersectionObserver(loadImg, {
+  root: null,
+  threshold: 0.3,
+  rootMargin: "200px",
+});
+
+bluryImgs.forEach((img) => imgObserver.observe(img));
