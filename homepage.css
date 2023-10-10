@@ -916,16 +916,6 @@ ul.ft-li {
   .social-icons-ft {
     margin: 64px 0 32px 0;
   }
-  form.feedback-message {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-  }
-  .feedback-message {
-    width: 95%;
-    padding: 8px 16px 8px 16px;
-    margin: 8px;
-  }
   h6 {
     pointer-events: none;
     border-style: none;
@@ -934,47 +924,71 @@ ul.ft-li {
     color: #000e19;
     cursor: default;
   }
+  form.feedback-message {
+    display: flex;
+    flex-direction: column;
+  }
+  .feedback-message {
+    width: 95%;
+    padding: 8px 16px 8px 16px;
+    margin: 8px;
+  }
   label {
     text-align: left;
     font-size: 2.3em;
   }
-  #email,
-  #message {
+  fieldset {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-style: none;
+  }
+  input,
+  textarea {
     background-color: #000e19;
     color: #e4e4e4;
-    border-radius: 8px;
-    font-size: 2.5em;
-    width: 10%;
-    transition: width 0.4s ease-in-out;
+    font-size: 1em;
     outline: none;
-  }
-  #email:focus {
-    width: 90%;
-  }
-  #message {
-    width: 10%;
     resize: none;
   }
-  #message:focus {
-    width: 90%;
+  textarea {
+    width: 95%;
+    height: 2vw;
+    transition: 0.3s ease;
   }
-  .submit {
+  input#name {
+    width: 32%;
+    transition: 0.3s ease;
+  }
+  input#email {
+    width: 31%;
+    transition: 0.3s ease;
+  }
+  input#age {
+    width: 33%;
+  }
+  input#name:focus,
+  #email:focus {
+    width: 80%;
+  }
+  textarea:focus {
+    height: 7vw;
+  }
+  #submit {
     width: 25%;
     margin: auto;
     margin-top: 8px;
-  }
-  .submit button {
-    font-weight: bold;
-    font-size: 2.5em;
-    text-align: center;
     background-color: #000e19;
-    color: #e4e4e4;
-    padding: 8px 16px 8px 16px;
     border-radius: 8px;
     border-style: none;
+    color: #e4e4e4;
+    padding: 8px 16px 8px 16px;
+    font-weight: bold;
+    font-size: 2em;
   }
-  .submit button:hover {
+
+  #submit:hover {
     color: #9f5c27;
-    transition: linear 0.2s;
+    transition: 0.3s ease;
   }
 }
