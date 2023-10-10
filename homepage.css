@@ -516,7 +516,7 @@ ul.ft-li {
   line-height: 50px;
   font-size: 2em;
 }
-.hidden {
+.hidden-prompt {
   visibility: hidden;
   opacity: 0;
 }
