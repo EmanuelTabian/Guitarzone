@@ -5,7 +5,8 @@ const lazyImgs = document.querySelectorAll(".lazy--img");
 const allSections = document.querySelectorAll("section");
 const form = document.querySelector(".feedback-message");
 const message = document.querySelector(".feedb");
-const h6 = document.querySelector(".fb-btn");
+const feedbackBtn = document.querySelector(".fb-btn");
+const overlay = document.querySelector(".overlay");
 burgerBtn.addEventListener("click", function (event) {
   event.preventDefault();
   burgerIconContainer.style.display = "block";
@@ -113,10 +114,22 @@ allSections.forEach((section) => sectionObs.observe(section));
 // Form interaction
 form.addEventListener("submit", function (e) {
   e.preventDefault();
-  console.log("hello world");
   form.style.display = "none";
+  const h6 = feedbackBtn.closest("h6");
   h6.style.display = "none";
-  message.textContent = "Thank you for your feedback!";
+  overlay.classList.add("hidden");
+  message.textContent = "Thank you!";
   message.style.margin = "5em 1.5em";
   message.style.fontSize = "3.5em";
+  message.style.border = "none";
+});
+
+// Feedback modal for media queries
+feedbackBtn.addEventListener("click", function (e) {
+  e.preventDefault();
+  const h6 = e.target.closest("h6");
+  h6.style.borderStyle = "none";
+  overlay.classList.remove("hidden");
+  form.classList.add("modal");
+  form.style.display = "block";
 });
