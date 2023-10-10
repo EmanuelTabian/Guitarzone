@@ -949,14 +949,14 @@ ul.ft-li {
     outline: none;
   }
   #email:focus {
-    width: 100%;
+    width: 90%;
   }
   #message {
     width: 10%;
     resize: none;
   }
   #message:focus {
-    width: 100%;
+    width: 90%;
   }
   .submit {
     width: 25%;

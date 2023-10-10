@@ -208,11 +208,48 @@
               also subscribe to our newsletter.
             </p>
             <form class="feedback-message">
-              <label>E-mail:</label>
-              <input type="text" id="email" />
-              <label>Message:</label>
-              <textarea id="message"></textarea>
-              <div class="submit"><button>Submit</button></div>
+              <fieldset class="contact-info">
+                <label id="name-label" for="name"
+                  >Name:
+                  <input
+                    id="name"
+                    type="text"
+                    placeholder="Enter your name"
+                    required
+                  />
+                </label>
+                <label id="email-label" for="email"
+                  >E-mail:
+                  <input
+                    id="email"
+                    type="text"
+                    placeholder="Enter your email"
+                    required
+                  />
+                </label>
+                <label id="age-label" for="age"
+                  >Age(optional):
+                  <input
+                    id="age"
+                    type="text"
+                    placeholder="Enter your age"
+                    required
+                  />
+                </label>
+              </fieldset>
+              <fieldset class="message">
+                <label id="message-label" for="message"
+                  >Message:
+                  <textarea id="message"></textarea>
+                </label>
+              </fieldset>
+              <fieldset class="newsletter">
+                <label id="newsletter-label" for="newsletter"
+                  ><input type="checkbox" id="newsletter" /> Subscribe to our
+                  newsletter.</label
+                >
+              </fieldset>
+              <input id="submit" type="submit" value="submit" />
             </form>
           </div>
         </div>
