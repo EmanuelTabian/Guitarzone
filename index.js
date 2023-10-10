@@ -3,7 +3,11 @@ const closeBtn = document.getElementById("close-btn");
 const burgerIconContainer = document.getElementById("burger-icon-container");
 const lazyImgs = document.querySelectorAll(".lazy--img");
 const allSections = document.querySelectorAll("section");
-console.log(allSections);
+const form = document.querySelector(".feedback-message");
+const closeFormBtn = document.querySelector("#close-form-btn");
+const message = document.querySelector(".feedb");
+const feedbackBtn = document.querySelector(".fb-btn");
+const overlay = document.querySelector(".overlay");
 burgerBtn.addEventListener("click", function (event) {
   event.preventDefault();
   burgerIconContainer.style.display = "block";
@@ -107,3 +111,38 @@ const sectionObs = new IntersectionObserver(sectionFn, {
 });
 
 allSections.forEach((section) => sectionObs.observe(section));
+
+// Form interaction
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+  form.style.display = "none";
+  const h6 = feedbackBtn.closest("h6");
+  h6.style.display = "none";
+  overlay.classList.add("hidden-prompt");
+  message.textContent = "Thank you!";
+  message.style.margin = "5em 1.5em";
+  message.style.fontSize = "3.5em";
+  message.style.border = "none";
+  closeFormBtn.classList.add("hidden-prompt");
+});
+
+// Feedback modal for media queries
+feedbackBtn.addEventListener("click", function (e) {
+  e.preventDefault();
+  const h6 = e.target.closest("h6");
+  h6.style.borderStyle = "none";
+  overlay.classList.remove("hidden-prompt");
+  form.classList.add("modal");
+  form.style.display = "block";
+  form.classList.remove("hidden-prompt");
+  closeFormBtn.classList.remove("hidden-prompt");
+});
+
+const closeModal = function () {
+  overlay.classList.add("hidden-prompt");
+  form.classList.add("hidden-prompt");
+  closeFormBtn.classList.add("hidden-prompt");
+};
+
+closeFormBtn.addEventListener("click", closeModal);
+overlay.addEventListener("click", closeModal);
