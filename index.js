@@ -4,6 +4,7 @@ const burgerIconContainer = document.getElementById("burger-icon-container");
 const lazyImgs = document.querySelectorAll(".lazy--img");
 const allSections = document.querySelectorAll("section");
 const form = document.querySelector(".feedback-message");
+const closeFormBtn = document.querySelector("#close-form-btn");
 const message = document.querySelector(".feedb");
 const feedbackBtn = document.querySelector(".fb-btn");
 const overlay = document.querySelector(".overlay");
@@ -122,6 +123,7 @@ form.addEventListener("submit", function (e) {
   message.style.margin = "5em 1.5em";
   message.style.fontSize = "3.5em";
   message.style.border = "none";
+  closeFormBtn.classList.add("hidden-prompt");
 });
 
 // Feedback modal for media queries
@@ -132,4 +134,15 @@ feedbackBtn.addEventListener("click", function (e) {
   overlay.classList.remove("hidden-prompt");
   form.classList.add("modal");
   form.style.display = "block";
+  form.classList.remove("hidden-prompt");
+  closeFormBtn.classList.remove("hidden-prompt");
 });
+
+const closeModal = function () {
+  overlay.classList.add("hidden-prompt");
+  form.classList.add("hidden-prompt");
+  closeFormBtn.classList.add("hidden-prompt");
+};
+
+closeFormBtn.addEventListener("click", closeModal);
+overlay.addEventListener("click", closeModal);

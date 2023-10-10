@@ -544,6 +544,14 @@ ul.ft-li {
   transition: all 0.5s;
   box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
 }
+#close-form-btn {
+  position: fixed;
+  top: 1px;
+  right: 8px;
+  z-index: 1000;
+  transition: all 0.5s;
+  font-size: 32px;
+}
 label {
   text-align: left;
   font-size: 2.3em;
