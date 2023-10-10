@@ -117,7 +117,7 @@ form.addEventListener("submit", function (e) {
   form.style.display = "none";
   const h6 = feedbackBtn.closest("h6");
   h6.style.display = "none";
-  overlay.classList.add("hidden");
+  overlay.classList.add("hidden-prompt");
   message.textContent = "Thank you!";
   message.style.margin = "5em 1.5em";
   message.style.fontSize = "3.5em";
@@ -129,7 +129,7 @@ feedbackBtn.addEventListener("click", function (e) {
   e.preventDefault();
   const h6 = e.target.closest("h6");
   h6.style.borderStyle = "none";
-  overlay.classList.remove("hidden");
+  overlay.classList.remove("hidden-prompt");
   form.classList.add("modal");
   form.style.display = "block";
 });
