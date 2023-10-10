@@ -3,7 +3,9 @@ const closeBtn = document.getElementById("close-btn");
 const burgerIconContainer = document.getElementById("burger-icon-container");
 const lazyImgs = document.querySelectorAll(".lazy--img");
 const allSections = document.querySelectorAll("section");
-console.log(allSections);
+const form = document.querySelector(".feedback-message");
+const message = document.querySelector(".feedb");
+const h6 = document.querySelector(".fb-btn");
 burgerBtn.addEventListener("click", function (event) {
   event.preventDefault();
   burgerIconContainer.style.display = "block";
@@ -107,3 +109,14 @@ const sectionObs = new IntersectionObserver(sectionFn, {
 });
 
 allSections.forEach((section) => sectionObs.observe(section));
+
+// Form interaction
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+  console.log("hello world");
+  form.style.display = "none";
+  h6.style.display = "none";
+  message.textContent = "Thank you for your feedback!";
+  message.style.margin = "5em 1.5em";
+  message.style.fontSize = "3.5em";
+});

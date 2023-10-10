@@ -738,9 +738,7 @@ ul.ft-li {
   .add-cart-button a::after {
     display: none;
   }
-  h6 {
-    border-bottom: none;
-  }
+
   ul.ft-li a {
     border-bottom: none;
   }
@@ -919,6 +917,7 @@ ul.ft-li {
   h6 {
     pointer-events: none;
     border-style: none;
+    border-bottom: none;
   }
   .ft-li a:hover {
     color: #000e19;

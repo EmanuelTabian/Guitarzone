@@ -202,10 +202,12 @@
             </ul>
           </div>
           <div class="feedback-section">
-            <h6 class="ft-li"><a href="">Send us feedback!</a></h6>
+            <h6 class="ft-li">
+              <a class="fb-btn" href="">Send us feedback!</a>
+            </h6>
             <p class="feedb">
-              You can send us a message regarding our music and products!You can
-              also subscribe to our newsletter.
+              You can send us a message regarding our music and products! You
+              can also subscribe to our newsletter.
             </p>
             <form class="feedback-message">
               <fieldset class="contact-info">
@@ -222,19 +224,14 @@
                   >E-mail:
                   <input
                     id="email"
-                    type="text"
+                    type="email"
                     placeholder="Enter your email"
                     required
                   />
                 </label>
                 <label id="age-label" for="age"
                   >Age(optional):
-                  <input
-                    id="age"
-                    type="number"
-                    placeholder="Enter your age"
-                    required
-                  />
+                  <input id="age" type="number" placeholder="Enter your age" />
                 </label>
               </fieldset>
               <fieldset class="message">
@@ -243,6 +240,7 @@
                   <textarea
                     id="message"
                     placeholder="Your thoughts on our content"
+                    required
                   ></textarea>
                 </label>
               </fieldset>
