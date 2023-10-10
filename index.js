@@ -2,7 +2,8 @@ const burgerBtn = document.getElementById("burger-btn");
 const closeBtn = document.getElementById("close-btn");
 const burgerIconContainer = document.getElementById("burger-icon-container");
 const lazyImgs = document.querySelectorAll(".lazy--img");
-
+const allSections = document.querySelectorAll("section");
+console.log(allSections);
 burgerBtn.addEventListener("click", function (event) {
   event.preventDefault();
   burgerIconContainer.style.display = "block";
@@ -72,7 +73,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const loadImg = function (entries, observer) {
     entries.forEach((entry) => {
       if (!entry.isIntersecting) return;
-      console.log(entry.target);
       entry.target.src = entry.target.dataset.src;
       entry.target.addEventListener("load", function () {
         entry.target.classList.remove("lazy--img");
@@ -90,3 +90,20 @@ document.addEventListener("DOMContentLoaded", function () {
     imgObserver.observe(img);
   });
 });
+
+// Section reveal
+
+const sectionFn = function (entries, observer) {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) return;
+    entry.target.classList.remove("hidden--section");
+    observer.unobserve(entry.target);
+  });
+};
+
+const sectionObs = new IntersectionObserver(sectionFn, {
+  root: null,
+  threshold: 0.1,
+});
+
+allSections.forEach((section) => sectionObs.observe(section));

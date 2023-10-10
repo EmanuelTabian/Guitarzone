@@ -91,7 +91,7 @@
         title="Guitarzone"
       />
     </div>
-    <section class="songs-covers-row">
+    <section class="songs-row hidden--section">
       <article class="first-article" id="art--2">
         <div class="container">
           <img
@@ -111,6 +111,8 @@
           </div>
         </div>
       </article>
+    </section>
+    <section class="covers--row hidden--section">
       <article class="second-article" id="art--3">
         <div class="second-container">
           <img
@@ -131,7 +133,7 @@
         </div>
       </article>
     </section>
-    <section class="third-article" id="art--4">
+    <section class="third-article hidden--section" id="art--4">
       <div class="third-container">
         <div class="tickets">
           <h3>Tickets</h3>
@@ -150,7 +152,7 @@
         </div>
       </div>
     </section>
-    <section class="fourth-article" id="art--5">
+    <section class="fourth-article hidden--section" id="art--5">
       <div class="fourth-container">
         <div class="shop">
           <h4>Merchandise shop</h4>
@@ -169,55 +171,56 @@
         </div>
       </div>
     </section>
-    <footer>
-      <div class="ft-container">
-        <div class="follow-section">
-          <h5>Follow us</h5>
-          <div class="social-icons-ft">
-            <span
-              ><a href=""><ion-icon name="logo-twitter"></ion-icon></a
-            ></span>
-            <span
-              ><a href=""><ion-icon name="logo-facebook"></ion-icon></a
-            ></span>
-            <span
-              ><a href=""><ion-icon name="logo-youtube"></ion-icon></a
-            ></span>
-            <br />
-            <span
-              ><a href=""><ion-icon name="mail-outline"></ion-icon></a
-            ></span>
-            <span
-              ><a href=""><ion-icon name="call-outline"></ion-icon></a
-            ></span>
+    <section class="feedback hidden--section">
+      <footer>
+        <div class="ft-container">
+          <div class="follow-section">
+            <h5>Follow us</h5>
+            <div class="social-icons-ft">
+              <span
+                ><a href=""><ion-icon name="logo-twitter"></ion-icon></a
+              ></span>
+              <span
+                ><a href=""><ion-icon name="logo-facebook"></ion-icon></a
+              ></span>
+              <span
+                ><a href=""><ion-icon name="logo-youtube"></ion-icon></a
+              ></span>
+              <br />
+              <span
+                ><a href=""><ion-icon name="mail-outline"></ion-icon></a
+              ></span>
+              <span
+                ><a href=""><ion-icon name="call-outline"></ion-icon></a
+              ></span>
+            </div>
+            <ul class="ft-li">
+              <li><a href="">Facebook</a></li>
+              <li><a href="">Instagram</a></li>
+              <li><a href="">TikTok</a></li>
+              <li><a href="">Twitter</a></li>
+            </ul>
           </div>
-          <ul class="ft-li">
-            <li><a href="">Facebook</a></li>
-            <li><a href="">Instagram</a></li>
-            <li><a href="">TikTok</a></li>
-            <li><a href="">Twitter</a></li>
-          </ul>
+          <div class="feedback-section">
+            <h6 class="ft-li"><a href="">Send us feedback!</a></h6>
+            <p class="feedb">
+              You can send us a message regarding our music and products!You can
+              also subscribe to our newsletter.
+            </p>
+            <form class="feedback-message">
+              <label>E-mail:</label>
+              <input type="text" id="email" />
+              <label>Message:</label>
+              <textarea id="message"></textarea>
+              <div class="submit"><button>Submit</button></div>
+            </form>
+          </div>
         </div>
-        <div class="feedback-section">
-          <h6 class="ft-li"><a href="">Send us feedback!</a></h6>
-          <p class="feedb">
-            You can send us a message regarding our music and products!You can
-            also subscribe to our newsletter.
-          </p>
-          <form class="feedback-message">
-            <label>E-mail:</label>
-            <input type="text" id="email" />
-            <label>Message:</label>
-            <textarea id="message"></textarea>
-            <div class="submit"><button>Submit</button></div>
-          </form>
+        <div class="copyright">
+          <p class="cright">Copyright &#x0007C; &copy; 2022</p>
         </div>
-      </div>
-      <div class="copyright">
-        <p class="cright">Copyright &#x0007C; &copy; 2022</p>
-      </div>
-    </footer>
-
+      </footer>
+    </section>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
