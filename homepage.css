@@ -1,11 +1,4 @@
 /* This is for mobile. Width smaller than 768px */
-body {
-  max-width: 800px;
-  margin: 0;
-  font-family: "Poppins", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smootthing: grayscale;
-}
 :root {
   --blue-gradient: linear-gradient(#000e19, #00314a);
   --blue-gradient-top: linear-gradient(to top, #000e19, #00314a);
@@ -13,6 +6,15 @@ body {
   --white: #e4e4e4;
   --gray: #d0d0d0;
   --gray-gradient: linear-gradient(#b0b0b0, #e4e4e4);
+  --gray-gradient-reverse: linear-gradient(to top, #b0b0b0, #e4e4e4);
+}
+body {
+  max-width: 800px;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #000e19;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smootthing: grayscale;
 }
 
 /* Burger icon blanket design */
@@ -140,6 +142,14 @@ a {
   display: none;
 }
 
+/* Section hide */
+.hidden--section {
+  opacity: 0;
+  transform: translateY(3rem);
+}
+section {
+  transition: transform 1s, opacity 1s;
+}
 /*Songs section CSS design */
 
 article.first-article {
@@ -782,7 +792,7 @@ ul.ft-li {
     justify-content: space-between;
     flex-direction: column-reverse;
   }
-  section.songs-covers-row {
+  section.songs-row {
     display: flex;
     background: var(--blue-gradient);
   }
@@ -802,7 +812,7 @@ ul.ft-li {
   }
   .songs-img {
     width: 60%;
-    height: 16vw;
+    height: 25vw;
     margin: auto;
     margin-left: 16px;
     margin-bottom: 32px;
@@ -827,6 +837,9 @@ ul.ft-li {
 
   /*Covers section CSS design */
 
+  section.covers--row {
+    background: var(--gray-gradient-reverse);
+  }
   article.second-article {
     background-color: #21182d;
   }
@@ -837,7 +850,7 @@ ul.ft-li {
   }
   .covers-img {
     width: 60%;
-    height: 16vw;
+    height: 25vw;
     margin: auto;
     margin-right: 16px;
     margin-bottom: 32px;
