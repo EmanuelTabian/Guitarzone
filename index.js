@@ -12,7 +12,7 @@ burgerBtn.addEventListener("click", function (event) {
   }, 10);
 });
 
-closeBtn.addEventListener("click", function (event) {
+burgerIconContainer.addEventListener("click", function (event) {
   event.preventDefault();
   burgerIconContainer.style.opacity = 0;
   burgerBtn.style.opacity = 1;
