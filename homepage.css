@@ -420,13 +420,14 @@ footer {
   background-attachment: fixed;
 }
 .ft-container {
+  margin: 1rem;
   display: flex;
   flex-direction: column;
 }
 .follow-section {
   text-align: center;
   text-shadow: 1px 4px 8px rgba(0, 0, 0, 0.3);
-  margin: 1rem;
+  margin: 8px 0;
   background-image: var(--blue-gradient);
   color: var(--white);
   border-radius: 32px;
@@ -476,7 +477,7 @@ form.feedback-message {
 .feedback-section {
   text-align: center;
   font-weight: bold;
-  margin: auto;
+  margin: 8px auto;
   text-shadow: 1px 4px 8px rgba(0, 0, 0, 0.3);
   background-image: var(--gray-gradient);
   color: #21182d;
