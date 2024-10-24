@@ -463,6 +463,11 @@ ul.ft-li a {
 form.feedback-message {
   display: none;
 }
+.contact-info {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 10rem 1fr;
+}
 .feedback-section {
   text-align: center;
   font-weight: bold;
