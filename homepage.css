@@ -421,19 +421,17 @@ footer {
 }
 .ft-container {
   display: flex;
-  justify-content: space-around;
-  flex-direction: row;
+  flex-direction: column;
 }
 .follow-section {
   text-align: center;
   text-shadow: 1px 4px 8px rgba(0, 0, 0, 0.3);
-  margin: 16px 8px 16px 32px;
+  margin: 1rem;
   background-image: var(--blue-gradient);
   color: var(--white);
   border-radius: 32px;
   border-top-left-radius: 0px;
   padding-inline-start: 0;
-  width: 40%;
 }
 h5 {
   font-size: 2.5em;
@@ -441,9 +439,11 @@ h5 {
   margin: 16px 32px 0;
 }
 ul.ft-li {
-  padding-inline-start: 0;
-  text-align: center;
-  line-height: 32px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0;
 }
 .ft-li a {
   text-decoration: none;
@@ -476,14 +476,13 @@ form.feedback-message {
 .feedback-section {
   text-align: center;
   font-weight: bold;
-  margin: 16px 32px 16px 8px;
+  margin: auto;
   text-shadow: 1px 4px 8px rgba(0, 0, 0, 0.3);
   background-image: var(--gray-gradient);
   color: #21182d;
   border-radius: 32px;
-  border-top-right-radius: 0px;
   padding-inline-start: 0;
-  width: 60%;
+  max-width: 80rem;
 }
 h6.ft-li a {
   color: #21182d;
@@ -520,7 +519,6 @@ div.copyright {
 .feedback-section,
 .follow-section {
   font-size: 0.5em;
-  width: 40%;
 }
 ul.ft-li {
   line-height: 50px;
