@@ -160,3 +160,26 @@ To use the application, follow these steps:
 4. **Smooth Scrolling and Hover Effects**: Experience the smooth scrolling behavior when navigating through the sections. Additionally, hover over different elements to see the interactive effects.
 
 This application applies fundamental front-end development skills, including responsive design, semantic `HTML`, `CSS` styling, and `JavaScript` interactivity.
+
+## Deployment
+
+To deploy this project via Render, follow these steps:
+
+1. **Create a Render Account**: If you don't already have an account, sign up at [Render](https://render.com).
+
+2. **New Web Service**: In the Render dashboard, click on the "New" button and select "Web Service".
+
+3. **Connect Repository**: Connect your GitHub repository to Render. Select the `guitarzone-website` repository.
+
+4. **Configure Settings**:
+
+   - **Name**: Choose a name for your service.
+   - **Region**: Select the region closest to your target audience.
+   - **Build Command**: Leave this empty this your project doesn't require a build step.
+   - **Start Command**: Set this to `live-server --port $PORT`.
+
+5. **Deploy**: Click on "Deploy Web Service" to start the deployment process.
+
+6. **Access Your Site**: Once the deployment is complete, your site will be live at the URL provided by Render. For this project, the live version is available [here](https://guitarzone.onrender.com).
+
+For more detailed instructions, refer to the [Render documentation](https://render.com/docs).
