@@ -146,3 +146,17 @@ Your application should now be running on `http://localhost:your-localhost-port`
 
 - The app can simply run by opening the `index.html` file in a browser.
 - Using `live-server` is recommended because it provides a quick and efficient way to serve your project with **live reloading** capabilities, ensuring that any changes made to the code are immediately reflected in the browser without the need for manual refreshes.
+
+## Usage
+
+To use the application, follow these steps:
+
+1. **Launch the Application**: Open the app in your preferred web browser. You can do this by navigating to the `index.html` file or using `live-server` as described in the installation section.
+
+2. **Navigate Through Sections**: Scroll through the various sections of the website, including Home, Songs, Covers, Tickets, and Shop.
+
+3. **Interactive Form**: Access the form by clicking on the designated button. The form is purely presentational and does not submit data. It showcases form structure and validation techniques.
+
+4. **Smooth Scrolling and Hover Effects**: Experience the smooth scrolling behavior when navigating through the sections. Additionally, hover over different elements to see the interactive effects.
+
+This application applies fundamental front-end development skills, including responsive design, semantic `HTML`, `CSS` styling, and `JavaScript` interactivity.
