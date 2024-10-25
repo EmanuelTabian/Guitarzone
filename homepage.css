@@ -471,6 +471,7 @@ form.feedback-message {
 }
 .contact-info > input {
   border: none;
+  border-radius: 8px;
   font-size: 1rem;
   padding: 8px 0;
 }
@@ -582,6 +583,7 @@ input,
 textarea {
   background-color: #000e19;
   border: none;
+  border-radius: 8px;
   color: #e4e4e4;
   font-size: 1rem;
   outline: none;
