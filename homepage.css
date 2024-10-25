@@ -420,20 +420,19 @@ footer {
   background-attachment: fixed;
 }
 .ft-container {
+  margin: 1rem;
   display: flex;
-  justify-content: space-around;
-  flex-direction: row;
+  flex-direction: column;
 }
 .follow-section {
   text-align: center;
   text-shadow: 1px 4px 8px rgba(0, 0, 0, 0.3);
-  margin: 16px 8px 16px 32px;
+  margin: 8px 0;
   background-image: var(--blue-gradient);
   color: var(--white);
   border-radius: 32px;
   border-top-left-radius: 0px;
   padding-inline-start: 0;
-  width: 40%;
 }
 h5 {
   font-size: 2.5em;
@@ -441,9 +440,11 @@ h5 {
   margin: 16px 32px 0;
 }
 ul.ft-li {
-  padding-inline-start: 0;
-  text-align: center;
-  line-height: 32px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0;
 }
 .ft-li a {
   text-decoration: none;
@@ -463,17 +464,27 @@ ul.ft-li a {
 form.feedback-message {
   display: none;
 }
+.contact-info {
+  padding: 1rem;
+  display: flex;
+  gap: 8px;
+}
+.contact-info > input {
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  padding: 8px 0;
+}
 .feedback-section {
   text-align: center;
   font-weight: bold;
-  margin: 16px 32px 16px 8px;
+  margin: 8px auto;
   text-shadow: 1px 4px 8px rgba(0, 0, 0, 0.3);
   background-image: var(--gray-gradient);
   color: #21182d;
   border-radius: 32px;
-  border-top-right-radius: 0px;
   padding-inline-start: 0;
-  width: 60%;
+  max-width: 80rem;
 }
 h6.ft-li a {
   color: #21182d;
@@ -510,7 +521,6 @@ div.copyright {
 .feedback-section,
 .follow-section {
   font-size: 0.5em;
-  width: 40%;
 }
 ul.ft-li {
   line-height: 50px;
@@ -556,6 +566,13 @@ label {
   text-align: left;
   font-size: 2.3em;
 }
+.newsletter {
+  padding: 1rem;
+  font-size: 0.75rem;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+}
 fieldset {
   display: flex;
   justify-content: flex-start;
@@ -565,30 +582,16 @@ fieldset {
 input,
 textarea {
   background-color: #000e19;
+  border: none;
+  border-radius: 8px;
   color: #e4e4e4;
-  font-size: 1em;
+  font-size: 1rem;
   outline: none;
   resize: none;
 }
 textarea {
-  width: 95%;
   height: 2em;
   transition: 0.3s ease;
-}
-input#name {
-  width: 37%;
-  transition: 0.3s ease;
-}
-input#email {
-  width: 36%;
-  transition: 0.3s ease;
-}
-input#age {
-  width: 37%;
-}
-input#name:focus,
-#email:focus {
-  width: 70%;
 }
 textarea:focus {
   height: 5em;
@@ -608,6 +611,9 @@ textarea:focus {
 #submit:hover {
   color: #9f5c27;
   transition: 0.3s ease;
+}
+.message {
+  padding: 1rem;
 }
 /* This is for tablets. Width from 768px to 992px */
 @media (min-width: 800px) {
@@ -1024,62 +1030,4 @@ textarea:focus {
     padding: 8px 16px 8px 16px;
     margin: 8px;
   }
-  /* label {
-    text-align: left;
-    font-size: 2.3em;
-  }
-  fieldset {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    border-style: none;
-  }
-  input,
-  textarea {
-    background-color: #000e19;
-    color: #e4e4e4;
-    font-size: 1em;
-    outline: none;
-    resize: none;
-  }
-  textarea {
-    width: 95%;
-    height: 2vw;
-    transition: 0.3s ease;
-  }
-  input#name {
-    width: 32%;
-    transition: 0.3s ease;
-  }
-  input#email {
-    width: 31%;
-    transition: 0.3s ease;
-  }
-  input#age {
-    width: 33%;
-  }
-  input#name:focus,
-  #email:focus {
-    width: 80%;
-  }
-  textarea:focus {
-    height: 7vw;
-  }
-  #submit {
-    width: 25%;
-    margin: auto;
-    margin-top: 8px;
-    background-color: #000e19;
-    border-radius: 8px;
-    border-style: none;
-    color: #e4e4e4;
-    padding: 8px 16px 8px 16px;
-    font-weight: bold;
-    font-size: 2em;
-  }
-
-  #submit:hover {
-    color: #9f5c27;
-    transition: 0.3s ease;
-  } */
 }
