@@ -19,3 +19,10 @@ The project showcases a landing webpage with a strong emphasis on semantic HTML 
 - **Form Structure**: Demonstrating the semantic structure of an HTML form, though the form itself does not submit data.
 
 This project served as a foundational exercise in front-end development, combining HTML, CSS, and JavaScript to create a functional and visually appealing web application.
+
+## Table of contents
+
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Deployment](#deployment)
