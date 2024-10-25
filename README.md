@@ -35,11 +35,11 @@ This project presents several fundamental features that highlight essential begi
 
 The project structure adheres to best practices by utilizing semantic HTML elements such as:
 
-- `nav`
-- `header`
-- `section`
-- `article`
-- `footer`
+- **`nav`**
+- **`header`**
+- **`section`**
+- **`article`**
+- **`footer`**
 
 It doesn't rely on `div` and `span` tags solely. This enhances the readability and maintainability of the code. Additionally, the form elements are organized using `fieldset` tags to group related fields, and each input is accompanied by a descriptive `label`, ensuring accessibility and clarity.
 
@@ -120,3 +120,29 @@ Reveals sections with a fade-in effect as they come into view, also using the In
   }
   ```
 - Sections are unobserved after being revealed to optimize performance and prevent redundant executions.
+
+## Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/EmanuelTabian/guitarzone-website.git
+   ```
+2. **Navigate to the project directory:**
+   ```bash
+   cd guitarzone-website
+   ```
+3. **Install live-server:**
+
+   ```bash
+   npm install -g live-server
+   ```
+
+4. **Run the project using live-server:**
+   ```bash
+   live-server
+   ```
+
+Your application should now be running on `http://localhost:your-localhost-port`.
+
+- The app can simply run by opening the `index.html` file in a browser.
+- Using `live-server` is recommended because it provides a quick and efficient way to serve your project with **live reloading** capabilities, ensuring that any changes made to the code are immediately reflected in the browser without the need for manual refreshes.
